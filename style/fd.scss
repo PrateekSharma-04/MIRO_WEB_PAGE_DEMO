@@ -430,14 +430,25 @@ section {
         display: flex;
         margin-top: 40px;
         font-family: Arial, Helvetica, sans-serif;
-    }
-
-    span{
+        // max-width: 104.52px;
+        // border-bottom: 1px solid;
         &:hover{
             cursor: pointer;
         }
     }
+
+    .underline-text-link{
+        border-bottom: 1px solid $primary-color;
+        max-width: 104.52px;
+        margin-right: 5px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
 }
+    
+
+   
 
 .work-together-image {
     display: flex;
@@ -481,13 +492,22 @@ section {
         display: flex;
         margin-top: 52px;
         font-family: Arial, Helvetica, sans-serif;
-    }
-
-    span{
         &:hover{
             cursor: pointer;
         }
+
     }
+
+    
+    .underline-text-link{
+        border-bottom: 1px solid $primary-color;
+        max-width: 104.52px;
+        margin-right: 5px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+   
 }
 
 
@@ -1147,6 +1167,11 @@ section {
 
         .first-review-title {
             margin: 36px 36.02px 36.37px 36px;
+
+            img {
+                border: transparent 1px solid;
+                box-shadow: 7px 3px 20px 5px #bcb5b521;
+            }
         }
 
         .first-review-text {
@@ -1206,6 +1231,10 @@ section {
 
         .third-review-title {
             margin: 36px 36px 34.3px 36px;
+            img {
+                border: transparent 1px solid;
+                box-shadow: 7px 3px 20px 5px #bcb5b521;
+            }
         }
 
         .third-review-text {

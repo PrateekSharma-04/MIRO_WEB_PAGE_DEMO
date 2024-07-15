@@ -392,8 +392,15 @@ section {
   margin-top: 40px;
   font-family: Arial, Helvetica, sans-serif;
 }
-.work-together span:hover {
+.work-together .link:hover {
   cursor: pointer;
+}
+.work-together .underline-text-link {
+  border-bottom: 1px solid #4262ff;
+  max-width: 104.52px;
+  margin-right: 5px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .work-together-image {
@@ -436,8 +443,15 @@ section {
   margin-top: 52px;
   font-family: Arial, Helvetica, sans-serif;
 }
-.tools span:hover {
+.tools .link:hover {
   cursor: pointer;
+}
+.tools .underline-text-link {
+  border-bottom: 1px solid #4262ff;
+  max-width: 104.52px;
+  margin-right: 5px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .ways-we-work {
@@ -992,6 +1006,10 @@ section {
 .reviews .first-review-content .first-review-title {
   margin: 36px 36.02px 36.37px 36px;
 }
+.reviews .first-review-content .first-review-title img {
+  border: transparent 1px solid;
+  box-shadow: 7px 3px 20px 5px rgba(188, 181, 181, 0.1294117647);
+}
 .reviews .first-review-content .first-review-text {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 24px;
@@ -1040,6 +1058,10 @@ section {
 }
 .reviews .third-review-content .third-review-title {
   margin: 36px 36px 34.3px 36px;
+}
+.reviews .third-review-content .third-review-title img {
+  border: transparent 1px solid;
+  box-shadow: 7px 3px 20px 5px rgba(188, 181, 181, 0.1294117647);
 }
 .reviews .third-review-content .third-review-text {
   font-family: Arial, Helvetica, sans-serif;
