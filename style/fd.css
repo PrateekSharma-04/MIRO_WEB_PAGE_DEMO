@@ -289,6 +289,9 @@ section {
   color: rgba(5, 0, 56, 0.6274509804);
   margin-top: 29px;
 }
+.cards .first-card-content span:hover {
+  cursor: pointer;
+}
 .cards .second-card {
   display: flex;
   flex-direction: column;
@@ -314,6 +317,9 @@ section {
   color: rgba(5, 0, 56, 0.6274509804);
   margin-top: 29px;
 }
+.cards .second-card-content span:hover {
+  cursor: pointer;
+}
 .cards .third-card {
   display: flex;
   flex-direction: column;
@@ -338,6 +344,9 @@ section {
   width: 100%;
   color: rgba(5, 0, 56, 0.6274509804);
   margin-top: 29px;
+}
+.cards .third-card-content span:hover {
+  cursor: pointer;
 }
 
 .center-button {
@@ -383,6 +392,9 @@ section {
   margin-top: 40px;
   font-family: Arial, Helvetica, sans-serif;
 }
+.work-together span:hover {
+  cursor: pointer;
+}
 
 .work-together-image {
   display: flex;
@@ -423,6 +435,9 @@ section {
   display: flex;
   margin-top: 52px;
   font-family: Arial, Helvetica, sans-serif;
+}
+.tools span:hover {
+  cursor: pointer;
 }
 
 .ways-we-work {
@@ -546,6 +561,9 @@ section {
   margin: 35px 0px 0px 19px;
   font-family: Arial, Helvetica, sans-serif;
 }
+.built-for-work .tabs-content .left-border span:hover {
+  cursor: pointer;
+}
 .built-for-work .tabs-content .tabs-image {
   margin: 0px;
 }
@@ -658,6 +676,9 @@ section {
   margin: 34px 0px 0px 3px;
   font-family: Arial, Helvetica, sans-serif;
 }
+.built-for-teams .tabs-content .left-border .link:hover {
+  cursor: pointer;
+}
 .built-for-teams .tabs-content .left-border .tools-content-and-links {
   border: 1px black;
   max-width: 304px;
@@ -733,6 +754,9 @@ section {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px 410.42px 1px 410.61px;
   border-bottom: 1px solid #050038;
+}
+.miro-trust .reviews .reviews-content .miro-trust-line span:hover {
+  cursor: pointer;
 }
 .miro-trust .reviews .ratings {
   border: 1px black;
@@ -958,6 +982,9 @@ section {
   font-size: 18px;
   margin: 0px 428.66px 40px 428.66px;
 }
+.reviews button:hover {
+  cursor: pointer;
+}
 .reviews .first-review-content {
   max-width: 359.95px;
   width: 100%;
@@ -1071,6 +1098,9 @@ section {
 .joining-link .joining-link-content .link-lines .second-line {
   border: 1px rgba(255, 255, 255, 0.59);
   border-bottom: 1px solid rgba(255, 255, 255, 0.59);
+}
+.joining-link .joining-link-content .link-lines .second-line:hover {
+  cursor: pointer;
 }
 .joining-link .joining-link-content button {
   margin: 0px 452.89px 0px 452.88px;
@@ -1353,6 +1383,9 @@ section {
   font-size: 24px;
   font-family: Arial, Helvetica, sans-serif;
 }
+.footer .policy-and-links-outer-border .policy-and-links-inner-border .social-media-and-cookies .terms-and-cookies .globe:hover {
+  cursor: pointer;
+}
 .footer .policy-and-links-outer-border .policy-and-links-inner-border .social-media-and-cookies .terms-and-cookies .globe .language {
   line-height: 24px;
   font-size: 18px;
@@ -1367,9 +1400,15 @@ section {
   font-size: 15px;
   line-height: 24px;
 }
+.footer .policy-and-links-outer-border .policy-and-links-inner-border .social-media-and-cookies .terms-and-cookies .policy-terms-cookies .copyright:hover {
+  cursor: pointer;
+}
 .footer .policy-and-links-outer-border .policy-and-links-inner-border .social-media-and-cookies .terms-and-cookies .policy-terms-cookies .footer-links {
   font-size: 16px;
   line-height: 24px;
+}
+.footer .policy-and-links-outer-border .policy-and-links-inner-border .social-media-and-cookies .terms-and-cookies .policy-terms-cookies .footer-links:hover {
+  cursor: pointer;
 }
 .footer .policy-and-links-outer-border .policy-and-links-inner-border .stors {
   justify-content: space-between;
@@ -1381,6 +1420,9 @@ section {
 .footer .policy-and-links-outer-border .policy-and-links-inner-border .stors img {
   border-color: #050038;
   border-radius: 8px;
+}
+.footer .policy-and-links-outer-border .policy-and-links-inner-border .stors img:hover {
+  cursor: pointer;
 }
 
 .red-text {

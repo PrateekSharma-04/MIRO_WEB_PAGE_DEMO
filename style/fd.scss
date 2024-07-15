@@ -305,6 +305,12 @@ section {
         width: 100%;
         color: #050038a0;
         margin-top: 29px;
+
+        span{
+            &:hover{
+                cursor: pointer;
+            }
+        }
     }
 
     .second-card {
@@ -333,6 +339,12 @@ section {
         width: 100%;
         color: #050038a0;
         margin-top: 29px;
+
+        span{
+            &:hover{
+                cursor: pointer;
+            }
+        }
     }
 
     .third-card {
@@ -361,6 +373,12 @@ section {
         width: 100%;
         color: #050038a0;
         margin-top: 29px;
+
+        span{
+            &:hover{
+                cursor: pointer;
+            }
+        }
     }
 }
 
@@ -413,6 +431,12 @@ section {
         margin-top: 40px;
         font-family: Arial, Helvetica, sans-serif;
     }
+
+    span{
+        &:hover{
+            cursor: pointer;
+        }
+    }
 }
 
 .work-together-image {
@@ -457,6 +481,12 @@ section {
         display: flex;
         margin-top: 52px;
         font-family: Arial, Helvetica, sans-serif;
+    }
+
+    span{
+        &:hover{
+            cursor: pointer;
+        }
     }
 }
 
@@ -601,6 +631,12 @@ section {
                 margin: 35px 0px 0px 19px;
                 font-family: Arial, Helvetica, sans-serif;
             }
+
+            span{
+                &:hover{
+                    cursor: pointer;
+                }
+            }
         }
 
         .tabs-image {
@@ -739,7 +775,13 @@ section {
                 display: flex;
                 margin: 34px 0px 0px 3px;
                 font-family: Arial, Helvetica, sans-serif;
+
+                &:hover{
+                    cursor: pointer;
+                }                
             }
+
+            
 
             .tools-content-and-links {
                 border: 1px black;
@@ -832,6 +874,10 @@ section {
                     font-family: Arial, Helvetica, sans-serif;
                     margin: 0px 410.42px 1px 410.61px;
                     border-bottom: 1px solid #050038;
+
+                    &:hover{
+                        cursor: pointer;
+                    }
                 }
             }
         }
@@ -1089,6 +1135,10 @@ section {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 18px;
         margin: 0px 428.66px 40px 428.66px;
+
+        &:hover{
+            cursor: pointer;
+        }
     }
 
     .first-review-content {
@@ -1222,6 +1272,10 @@ section {
             .second-line {
                 border: 1px rgba(255, 255, 255, 0.59);
                 border-bottom: 1px solid rgba(255, 255, 255, 0.59);
+
+                &:hover{
+                    cursor: pointer;
+                }
             }
         }
 
@@ -1260,6 +1314,7 @@ section {
                 margin: 24px 10px 20px 10px;
                 font-size: 16px;
                 line-height: 24px;
+                
 
                 .product-links {
                     max-width: 252px;
@@ -1576,6 +1631,9 @@ section {
                         width: 100%;
                         font-size: 24px;
                         font-family: Arial, Helvetica, sans-serif;
+                        &:hover{
+                            cursor: pointer;
+                        }
 
                         .language{
                             line-height: 24px;
@@ -1592,11 +1650,19 @@ section {
                         .copyright{
                             font-size: 15px;
                             line-height: 24px;
+
+                            &:hover{
+                                cursor: pointer;
+                            }
                         }
 
                         .footer-links{
                             font-size: 16px;
                             line-height: 24px;
+
+                            &:hover{
+                                cursor: pointer;
+                            }
                         }
                     }
                 }
@@ -1613,6 +1679,9 @@ section {
                 img{
                     border-color: #050038;
                     border-radius: 8px;
+                    &:hover{
+                        cursor: pointer;
+                    }
                 }
             }
         }
