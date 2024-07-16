@@ -6,28 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style/fd.css">
+    <script src="js/sidebar.js"></script>
 </head>
 
 <body>
     <div class="header">
-        <div class="il left-links-wrapper">
+        <div class="il d-flex left-links-wrapper">
             <img src="imgs/miro.jpg" alt="miro" class="logo">
-            <div class="links dark-text">
-                <span class="hd link"> Product </span>
-                <span class="hd link"> Solutions</span>
-                <span class="hd link">Resources</span>
-                <span class="hd link">Enterprize</span>
-                <span class="hd link"> Pricing</span>
+            <div class="d-flex dark-text hideOnMobile">
+                <li class="hd"><a href="#" class="left-link">Product</a></li>
+                <li><a href="#" class="drop-down-arrow"><svg xmlns="http://www.w3.org/2000/svg" height="20px"
+                            viewBox="0 -960 960 960" width="24px" fill="#050038">
+                            <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                        </svg></a></li>
+                <li class="hd"><a href="#" class="left-link"> Solutions</a></li>
+                <li><a href="#" class="drop-down-arrow"><svg xmlns="http://www.w3.org/2000/svg" height="20px"
+                            viewBox="0 -960 960 960" width="24px" fill="#050038">
+                            <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                        </svg></a></li>
+                <li class="hd"><a href="#" class="left-link">Resources</a></li>
+                <li><a href="#" class="drop-down-arrow"><svg xmlns="http://www.w3.org/2000/svg" height="20px"
+                            viewBox="0 -960 960 960" width="24px" fill="#050038">
+                            <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                        </svg></a></li>
+                <li class="hd"><a href="#" class="left-link">Enterprize</a></li>
+                <li class="hd"><a href="#" class="left-link">Pricing</a></li>
             </div>
         </div>
 
+        <div class=" dark-text sidebar">
+            <li class="right-link" onclick=hideSidebar()><a href="#" class="right-link"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="24px" fill="#050038">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a></li>
+            <li class="right-link"><a href="#" class="right-link">EN</a></li>
+            <li class="right-link"><a href="#" class="right-link">Contact</a></li>
+            <li class="right-link"><a href="#" class="right-link">Sales</a></li>
+            <li class="right-link"><a href="#" class="right-link">Login</a></li>
+        </div>
+
         <div class="il  right-links-wrapper dark-text">
-            <img class="lh" src="imgs/globe.jpg" alt="">
-            <span class="hf"> EN </span>
-            <span class="hf">Contact</span>
-            <span class="hf">Sales</span>
-            <span class="hf">Login</span>
-            <span class="hf"><button class="bt primary-btn">Sign up free &#8594</button></span>
+            <a href="#"><img class="lh hideOnTab" src="imgs/globe.jpg" alt="globe"></a>
+            <li class="hf-1 hideOnTab"><a href="#" class="right-link">EN</a></li>
+            <li class="hf hideOnTab"><a href="#" class="right-link">Contact</a></li>
+            <li class="hf hideOnTab"><a href="#" class="right-link">Sales</a></li>
+            <li class="hf hideOnTab"><a href="#" class="right-link">Login</a></li>
+            <li class="hf hideOnTab"><button class="bt primary-btn">Sign up free &#8594</button></li>
+            <li class="hideOnComputer" onclick=showSidebar()><a href="#" class="d-flex"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="24px" fill="#050038">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
         </div>
     </div>
     <div class="container">

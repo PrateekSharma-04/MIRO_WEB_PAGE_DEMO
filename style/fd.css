@@ -91,8 +91,72 @@ section {
 .header .hd {
   padding-left: 24px;
 }
+.header .hd .left-link {
+  color: #050038;
+  text-decoration: none;
+}
+.header .drop-down-arrow {
+  margin-left: 13.19px;
+  display: flex;
+  align-items: flex-end;
+}
+.header .hf-1 {
+  padding-left: 8px;
+}
+.header .hf-1 .right-link {
+  color: #050038;
+  text-decoration: none;
+}
 .header .hf {
   padding-left: 16px;
+}
+.header .hf .right-link {
+  color: #050038;
+  text-decoration: none;
+}
+.header .sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  list-style: none;
+}
+.header .sidebar .right-link {
+  color: #050038;
+  text-decoration: none;
+  padding-top: 16px;
+  padding-left: 10px;
+}
+@media (max-width: 1024px) {
+  .header .hideOnTab {
+    display: none;
+  }
+}
+@media (max-width: 426px) {
+  .header .sidebar {
+    width: 100%;
+    font-size: 35px;
+  }
+}
+@media (min-width: 1025px) {
+  .header .hideOnComputer {
+    display: none;
+  }
+}
+@media (max-width: 426px) {
+  .header .hideOnMobile {
+    display: none;
+  }
 }
 .header .il {
   display: inline;
@@ -100,10 +164,12 @@ section {
 .header .il.left-links-wrapper {
   display: flex;
   align-items: center;
+  list-style: none;
 }
 .header .il.right-links-wrapper {
   display: flex;
   align-items: center;
+  list-style: none;
 }
 .header .lh {
   size: 10px;
