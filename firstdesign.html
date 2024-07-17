@@ -13,7 +13,7 @@
     <div class="header">
         <div class="il d-flex left-links-wrapper">
             <img src="imgs/miro.jpg" alt="miro" class="logo">
-            <div class="d-flex dark-text hideOnMobile">
+            <div class="d-flex dark-text">
                 <li class="hd"><a href="#" class="left-link">Product</a></li>
                 <li><a href="#" class="drop-down-arrow"><svg xmlns="http://www.w3.org/2000/svg" height="20px"
                             viewBox="0 -960 960 960" width="24px" fill="#050038">
@@ -35,26 +35,49 @@
         </div>
 
         <div class=" dark-text sidebar">
-            <li class="right-link" onclick=hideSidebar()><a href="#" class="right-link"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+            <li class="right-link" onclick=hideSidebar()>
+                <a href="#" class="right-link"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
                         viewBox="0 -960 960 960" width="24px" fill="#050038">
                         <path
                             d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-                    </svg></a></li>
-            <li class="right-link"><a href="#" class="right-link">EN</a></li>
-            <li class="right-link"><a href="#" class="right-link">Contact</a></li>
-            <li class="right-link"><a href="#" class="right-link">Sales</a></li>
-            <li class="right-link"><a href="#" class="right-link">Login</a></li>
+                    </svg></a>
+            </li>
+            <li class="right-link d-flex direction">
+                <a href="#" class="right-link">Product</a>
+                <a href="#" class="drop-down-arrow"><svg xmlns="http://www.w3.org/2000/svg" height="15px"
+                        viewBox="0 -960 960 960" width="19px" fill="#050038">
+                        <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                    </svg></a>
+            </li>
+            <li class="right-link d-flex direction">
+                <a href="#" class="right-link"> Solutions</a>
+                <a href="#" class="drop-down-arrow"><svg xmlns="http://www.w3.org/2000/svg" height="15px"
+                        viewBox="0 -960 960 960" width="19px" fill="#050038">
+                        <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                    </svg></a>
+            </li>
+            <li class="right-link d-flex direction">
+                <a href="#" class="right-link">Resources</a>
+                <a href="#" class="drop-down-arrow"><svg xmlns="http://www.w3.org/2000/svg" height="15px"
+                        viewBox="0 -960 960 960" width="19px" fill="#050038">
+                        <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                    </svg></a>
+            </li>
+            <li class="right-link "><a href="#" class="right-link ">Enterprize</a></li>
+            <li class="right-link "><a href="#" class="right-link ">Pricing</a></li>
         </div>
 
         <div class="il  right-links-wrapper dark-text">
-            <a href="#"><img class="lh hideOnTab" src="imgs/globe.jpg" alt="globe"></a>
-            <li class="hf-1 hideOnTab"><a href="#" class="right-link">EN</a></li>
-            <li class="hf hideOnTab"><a href="#" class="right-link">Contact</a></li>
-            <li class="hf hideOnTab"><a href="#" class="right-link">Sales</a></li>
-            <li class="hf hideOnTab"><a href="#" class="right-link">Login</a></li>
-            <li class="hf hideOnTab"><button class="bt primary-btn">Sign up free &#8594</button></li>
-            <li class="hideOnComputer" onclick=showSidebar()><a href="#" class="d-flex"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                        viewBox="0 -960 960 960" width="24px" fill="#050038">
+            <a href="#"><img class="lh " src="imgs/globe.jpg" alt="globe"></a>
+            <li class="hf-1 "><a href="#" class="right-link">EN</a></li>
+            <li class="hf "><a href="#" class="right-link">Contact</a></li>
+            <li class="hf "><a href="#" class="right-link">Sales</a></li>
+            <li class="hf "><a href="#" class="right-link">Login</a></li>
+            <li class="hf "><button class="bt d-flex content-alignment primary-btn">Sign up free
+                    &#8594</button></li>
+            <li class="hideOnComputer" onclick=showSidebar()><a href="#" class="d-flex"><svg
+                        xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#050038">
                         <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
                     </svg></a></li>
         </div>
@@ -72,7 +95,7 @@
 
                     <div class="button-border">
                         <input class="int" type="text" name="" placeholder="Enter your work email">
-                        <button class="bt primary-btn"> Sign up for free &#8594</button>
+                        <button class="bt primary-btn d-flex content-alignment"> Sign up for free &#8594</button>
                     </div>
                     <div class="lne"> collaborate with your team within minutes</div>
                     <img class="rate" src="imgs/rate.jpg" alt="rating">
@@ -136,7 +159,7 @@
         </div>
     </div>
     <div class="center-button">
-        <button class="bt"> Sign up free &#8594 </button>
+        <button class="bt d-flex content-alignment"> Sign up free &#8594 </button>
     </div>
 
     <section class="padding" style="margin-top: 44px;">
@@ -184,13 +207,13 @@
 
     <section class="ways-we-work">
         <div class=" tag-line ">
-            <h1 class="dark-text">
+            <h1 class="d-flex dark-text">
                 The Ways We Work
             </h1>
             <div class="tag-line-content">
                 How has our relationship with work changed?
             </div>
-            <button class="bt" style="font-size: 14px;">
+            <button class="bt d-flex content-alignment" style="font-size: 14px;">
                 View the report &#8594
             </button>
         </div>
@@ -200,13 +223,13 @@
         <h1 class="dark-text">Built for the way you work </h1>
 
         <div class="tabs d-flex">
-            <div class="dark-text pointer tabs-information tab-bg-color"> Brainstorming </div>
-            <div class="dark-text pointer tabs-information"> Diagramming </div>
-            <div class="dark-text pointer tabs-information"> Meetings & Workshops </div>
-            <div class="dark-text pointer tabs-information"> Scrum Events </div>
-            <div class="dark-text pointer tabs-information"> Mapping </div>
-            <div class="dark-text pointer tabs-information"> Research & Design </div>
-            <div class="dark-text pointer tabs-information"> Strategic Planning </div>
+            <div class="dark-text d-flex content-alignment pointer tabs-information tab-bg-color"> Brainstorming </div>
+            <div class="dark-text d-flex content-alignment pointer tabs-information"> Diagramming </div>
+            <div class="dark-text d-flex content-alignment pointer tabs-information"> Meetings & Workshops </div>
+            <div class="dark-text d-flex content-alignment pointer tabs-information"> Scrum Events </div>
+            <div class="dark-text d-flex content-alignment pointer tabs-information"> Mapping </div>
+            <div class="dark-text d-flex content-alignment pointer tabs-information"> Research & Design </div>
+            <div class="dark-text d-flex content-alignment pointer tabs-information"> Strategic Planning </div>
         </div>
 
         <div class="tabs-content d-flex">
@@ -233,13 +256,13 @@
         <h1 class="dark-text">Built for all kinds of teams</h1>
 
         <div class="tabs d-flex">
-            <div class="dark-text pointer tabs-information tab-bg-color"> UX & Design </div>
-            <div class="dark-text pointer tabs-information margin"> Marketing</div>
-            <div class="dark-text pointer tabs-information margin"> Product Management </div>
-            <div class="dark-text pointer tabs-information margin"> Engineering </div>
-            <div class="dark-text pointer tabs-information margin"> Consultants </div>
-            <div class="dark-text pointer tabs-information margin"> Agile Coaches </div>
-            <div class="dark-text pointer tabs-information margin"> Sales </div>
+            <div class="dark-text d-flex content-alignment pointer tabs-information tab-bg-color"> UX & Design </div>
+            <div class="dark-text d-flex content-alignment pointer tabs-information margin"> Marketing</div>
+            <div class="dark-text d-flex content-alignment pointer tabs-information margin"> Product Management </div>
+            <div class="dark-text d-flex content-alignment pointer tabs-information margin"> Engineering </div>
+            <div class="dark-text d-flex content-alignment pointer tabs-information margin"> Consultants </div>
+            <div class="dark-text d-flex content-alignment pointer tabs-information margin"> Agile Coaches </div>
+            <div class="dark-text d-flex content-alignment pointer tabs-information margin"> Sales </div>
         </div>
 
         <div class="tabs-content d-flex">
@@ -384,7 +407,7 @@
         <h1> Loved by the world's best teams </h1>
 
         <div>
-            <button> See all customer stories &#8594 </button>
+            <button class="d-flex content-alignment"> See all customer stories &#8594 </button>
         </div>
 
         <div class="reviews-content d-flex">
@@ -462,7 +485,7 @@
                 </div>
             </div>
             <div>
-                <button class="bt">
+                <button class="bt d-flex content-alignment">
                     Sign up free &#8594
                 </button>
             </div>
@@ -479,15 +502,19 @@
 
                     <div class="first-list-links">
                         <div class="product-links">
-                            <div class="first-product-link">Online whiteboard</div>
-                            <div class="second-product-link">Apps & Integrations</div>
-                            <div class="third-product-link">Templates</div>
-                            <div class="fourth-product-link">Miroverse</div>
-                            <div class="fifth-product-link">Miro Developer Platform</div>
-                            <div class="sixth-product-link">Miro for Devices</div>
-                            <div class="seventh-product-link">Security & Compliance</div>
-                            <div class="eighth-product-link">Accessibility</div>
-                            <div class="ninth-product-link">Changelog</div>
+                            <div class="first-product-link"> <a href="#" class="footer-links"> Online whiteboard</a>
+                            </div>
+                            <div class="second-product-link"><a href="#" class="footer-links">Apps & Integrations </a>
+                            </div>
+                            <div class="third-product-link"><a href="#" class="footer-links">Templates </a></div>
+                            <div class="fourth-product-link"><a href="#" class="footer-links">Miroverse </a></div>
+                            <div class="fifth-product-link"><a href="#" class="footer-links">Miro Developer Platform
+                                </a></div>
+                            <div class="sixth-product-link"><a href="#" class="footer-links">Miro for Devices </a></div>
+                            <div class="seventh-product-link"><a href="#" class="footer-links"> Security &
+                                    Compliance</a></div>
+                            <div class="eighth-product-link"><a href="#" class="footer-links">Accessibility </a></div>
+                            <div class="ninth-product-link"><a href="#" class="footer-links">Changelog </a></div>
                         </div>
 
                         <div class="demo-product-link">
@@ -502,17 +529,22 @@
 
                     <div class="second-list-links">
                         <div class="solutions-links">
-                            <div class="first-solution-link">Meetings and Workshops</div>
-                            <div class="second-solution-link">Brainstorming & Ideation</div>
-                            <div class="third-solution-link">Agile Workflows</div>
-                            <div class="fourth-solution-link">Diagramming</div>
-                            <div class="fifth-solution-link">Research & Design</div>
-                            <div class="sixth-solution-link">Strategy & Planning</div>
-                            <div class="seventh-solution-link">Mind Map</div>
-                            <div class="eighth-solution-link">Concept Map</div>
-                            <div class="ninth-solution-link">Online Sticky Notes</div>
-                            <div class="tenth-solution-link">Flowchart</div>
-                            <div class="eleventh-solution-link">Wireframing</div>
+                            <div class="first-solution-link"><a href="#" class="footer-links">Meetings and Workshops
+                                </a></div>
+                            <div class="second-solution-link"><a href="#" class="footer-links"> Brainstorming &
+                                    Ideation</a></div>
+                            <div class="third-solution-link"><a href="#" class="footer-links"> Agile Workflows</a></div>
+                            <div class="fourth-solution-link"><a href="#" class="footer-links"> Diagramming</a></div>
+                            <div class="fifth-solution-link"><a href="#" class="footer-links"> Research & Design</a>
+                            </div>
+                            <div class="sixth-solution-link"><a href="#" class="footer-links">Strategy & Planning </a>
+                            </div>
+                            <div class="seventh-solution-link"><a href="#" class="footer-links">Mind Map </a></div>
+                            <div class="eighth-solution-link"><a href="#" class="footer-links"> Concept Map</a></div>
+                            <div class="ninth-solution-link"><a href="#" class="footer-links"> Online Sticky Notes</a>
+                            </div>
+                            <div class="tenth-solution-link"><a href="#" class="footer-links"> Flowchart</a></div>
+                            <div class="eleventh-solution-link"><a href="#" class="footer-links"> Wireframing</a></div>
 
                         </div>
                     </div>
@@ -524,14 +556,16 @@
 
                     <div class="third-list-links">
                         <div class="resources-links">
-                            <div class="first-resource-link">Miro Academy</div>
-                            <div class="second-resource-link">Help Center</div>
-                            <div class="third-resource-link">Blog</div>
-                            <div class="fourth-resource-link">Status</div>
-                            <div class="fifth-resource-link">Miro Community</div>
-                            <div class="sixth-resource-link">Miro Professional Network</div>
-                            <div class="seventh-resource-link">Miro Experts Directory</div>
-                            <div class="eighth-resource-link">Miro Events</div>
+                            <div class="first-resource-link"><a href="#" class="footer-links">Miro Academy </a></div>
+                            <div class="second-resource-link"><a href="#" class="footer-links">Help Center </a></div>
+                            <div class="third-resource-link"><a href="#" class="footer-links">Blog </a></div>
+                            <div class="fourth-resource-link"><a href="#" class="footer-links"> Status</a></div>
+                            <div class="fifth-resource-link"><a href="#" class="footer-links"> Miro Community</a></div>
+                            <div class="sixth-resource-link"><a href="#" class="footer-links"> Miro Professional
+                                    Network</a></div>
+                            <div class="seventh-resource-link"><a href="#" class="footer-links"> Miro Experts
+                                    Directory</a></div>
+                            <div class="eighth-resource-link"><a href="#" class="footer-links"> Miro Events</a></div>
                         </div>
                     </div>
 
@@ -542,10 +576,11 @@
 
                     <div class="fourth-list-links">
                         <div class="company-links">
-                            <div class="first-company-link">About us</div>
-                            <div class="second-company-link">Careers 🚀</div>
-                            <div class="third-company-link">Miro in the News</div>
-                            <div class="fourth-company-link">Customer Stories</div>
+                            <div class="first-company-link"><a href="#" class="footer-links"> About us</a></div>
+                            <div class="second-company-link"><a href="#" class="footer-links"> Careers 🚀</a></div>
+                            <div class="third-company-link"><a href="#" class="footer-links"> Miro in the News</a></div>
+                            <div class="fourth-company-link"><a href="#" class="footer-links"> Customer Stories</a>
+                            </div>
                         </div>
                     </div>
 
@@ -556,13 +591,13 @@
 
                     <div class="fifth-list-links">
                         <div class="plans-links">
-                            <div class="first-plan-link">Pricing</div>
-                            <div class="second-plan-link">Business</div>
-                            <div class="third-plan-link">Enterprise</div>
-                            <div class="fourth-plan-link">Consultants</div>
-                            <div class="fifth-plan-link">Education</div>
-                            <div class="sixth-plan-link">Startups</div>
-                            <div class="seventh-plan-link">NPOs</div>
+                            <div class="first-plan-link"><a href="#" class="footer-links"> Pricing</a></div>
+                            <div class="second-plan-link"><a href="#" class="footer-links"> Business</a></div>
+                            <div class="third-plan-link"><a href="#" class="footer-links"> Enterprise</a></div>
+                            <div class="fourth-plan-link"><a href="#" class="footer-links"> Consultants</a></div>
+                            <div class="fifth-plan-link"><a href="#" class="footer-links"> Education</a></div>
+                            <div class="sixth-plan-link"><a href="#" class="footer-links">Startups </a></div>
+                            <div class="seventh-plan-link"><a href="#" class="footer-links">NPOs </a></div>
                         </div>
 
                         <div class="contact-sales-link">

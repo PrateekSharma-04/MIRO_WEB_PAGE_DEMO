@@ -15,9 +15,14 @@ body {
   font-size: 16px;
   cursor: pointer;
 }
-.btprimary-btn {
+.bt.primary-btn {
   background-color: #4262ff;
   color: #ffffff;
+}
+
+.content-alignment {
+  justify-content: center;
+  align-items: center;
 }
 
 .dark-text {
@@ -34,6 +39,11 @@ body {
 
 .image-background {
   background-color: #ffd02f;
+}
+
+.footer-links {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 h1,
@@ -137,18 +147,20 @@ section {
   padding-top: 16px;
   padding-left: 10px;
 }
-@media (max-width: 1024px) {
+.header .sidebar .direction {
+  flex-direction: row;
+}
+@media (max-width: 768px) {
   .header .hideOnTab {
     display: none;
   }
 }
-@media (max-width: 426px) {
+@media (max-width: 600px) {
   .header .sidebar {
     width: 100%;
-    font-size: 35px;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1130px) {
   .header .hideOnComputer {
     display: none;
   }
@@ -175,11 +187,11 @@ section {
   size: 10px;
 }
 .header .bt {
-  background-color: #4262ff;
-  color: #ffffff;
   border-radius: 40px;
   padding: 17px 22.77px 17px 22px;
   font-family: Helvetica;
+  height: 50px;
+  width: 100%;
 }
 
 .dsn {
@@ -421,7 +433,8 @@ section {
   justify-content: center;
 }
 .center-button button {
-  max-width: 178.22px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   width: 100%;
   height: 48px;
   border-radius: 24px;
@@ -547,6 +560,7 @@ section {
   font-size: 22px;
   font-weight: bold;
   margin: 62px 221.77px 0px 221.23px;
+  text-align: center;
 }
 .ways-we-work .tag-line .tag-line-content {
   max-width: 363px;
@@ -558,12 +572,12 @@ section {
   margin: -10px 92.98px 20px 94.02px;
 }
 .ways-we-work .tag-line button {
-  max-width: 165px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   width: 100%;
   border-radius: 40px;
   background-color: #4262ff;
   color: #ffffff;
-  padding: 8px 26.25px 12px 26px;
   margin: 0px 192.87px 4px 192.87px;
 }
 
@@ -803,8 +817,7 @@ section {
   padding: 60px 0px 60px 0px;
 }
 .miro-trust .reviews {
-  max-width: auto;
-  width: 100%;
+  max-width: 100%;
   background-color: #ffd02f;
 }
 .miro-trust .reviews .reviews-content {
@@ -1201,12 +1214,12 @@ section {
   padding: 40px 20px 40px 20px;
 }
 .footer .lists {
-  max-width: auto;
-  width: 100%;
+  max-width: 100%;
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 auto;
   margin-bottom: 100px;
+  justify-content: space-between;
 }
 .footer .lists .first-list {
   max-width: 272px;

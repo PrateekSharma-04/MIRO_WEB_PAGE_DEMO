@@ -6,9 +6,15 @@
     border: none;
     font-size: 16px;
     cursor: pointer;
+    
 
-    &primary-btn{
+    &.primary-btn{
         background-color: $primary-color;
         color: #ffffff;
     }
+}
+
+.content-alignment{
+    justify-content: center;
+    align-items: center;
 }

@@ -76,22 +76,22 @@ section {
     .hd {
         padding-left: 24px;
 
-        .left-link{
+        .left-link {
             color: #050038;
             text-decoration: none;
         }
     }
 
-    .drop-down-arrow{
+    .drop-down-arrow {
         margin-left: 13.19px;
         display: flex;
         align-items: flex-end;
     }
 
-    .hf-1{
+    .hf-1 {
         padding-left: 8px;
 
-        .right-link{
+        .right-link {
             color: #050038;
             text-decoration: none;
         }
@@ -100,14 +100,14 @@ section {
     .hf {
         padding-left: 16px;
 
-        .right-link{
+        .right-link {
             color: #050038;
             text-decoration: none;
         }
 
     }
 
-    .sidebar{
+    .sidebar {
         position: fixed;
         top: 0;
         right: 0;
@@ -116,42 +116,46 @@ section {
         z-index: 999;
         background-color: rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(10px);
-        box-shadow: -10px 0 10px rgba( 0, 0, 0, 0.1);
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
         display: none;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
         list-style: none;
-        
-        .right-link{
+
+        .right-link {
             color: #050038;
             text-decoration: none;
             padding-top: 16px;
             padding-left: 10px;
         }
+
+        .direction{
+            flex-direction: row;
+        }
     }
 
-    @media(max-width: 1024px){
-        .hideOnTab{
+    @media(max-width: 768px) {
+        .hideOnTab {
             display: none;
         }
     }
 
-    @media(max-width : 426px) {
-        .sidebar{
+    @media(max-width : 600px) {
+        .sidebar {
             width: 100%;
-            font-size: 35px;
+            // font-size: 35px;
         }
     }
 
-    @media(min-width : 1025px) {
-        .hideOnComputer{
+    @media(min-width : 1130px) {
+        .hideOnComputer {
             display: none;
         }
     }
 
     @media(max-width : 426px) {
-        .hideOnMobile{
+        .hideOnMobile {
             display: none;
         }
     }
@@ -178,11 +182,11 @@ section {
     }
 
     .bt {
-        background-color: $primary-color;
-        color: #ffffff;
         border-radius: 40px;
         padding: 17px 22.77px 17px 22px;
         font-family: Helvetica;
+        height: 50px;
+        width: 100%;
     }
 }
 
@@ -382,8 +386,8 @@ section {
         color: #050038a0;
         margin-top: 29px;
 
-        span{
-            &:hover{
+        span {
+            &:hover {
                 cursor: pointer;
             }
         }
@@ -416,8 +420,8 @@ section {
         color: #050038a0;
         margin-top: 29px;
 
-        span{
-            &:hover{
+        span {
+            &:hover {
                 cursor: pointer;
             }
         }
@@ -450,8 +454,8 @@ section {
         color: #050038a0;
         margin-top: 29px;
 
-        span{
-            &:hover{
+        span {
+            &:hover {
                 cursor: pointer;
             }
         }
@@ -464,7 +468,7 @@ section {
     justify-content: center;
 
     button {
-        max-width: 178.22px;
+        max-width: fit-content;
         width: 100%;
         height: 48px;
         border-radius: 24px;
@@ -506,12 +510,13 @@ section {
         display: flex;
         margin-top: 40px;
         font-family: Arial, Helvetica, sans-serif;
-        &:hover{
+
+        &:hover {
             cursor: pointer;
         }
     }
 
-    .underline-text-link{
+    .underline-text-link {
         border-bottom: 1px solid $primary-color;
         max-width: 104.52px;
         margin-right: 5px;
@@ -520,9 +525,9 @@ section {
     }
 
 }
-    
 
-   
+
+
 
 .work-together-image {
     display: flex;
@@ -566,14 +571,15 @@ section {
         display: flex;
         margin-top: 52px;
         font-family: Arial, Helvetica, sans-serif;
-        &:hover{
+
+        &:hover {
             cursor: pointer;
         }
 
     }
 
-    
-    .underline-text-link{
+
+    .underline-text-link {
         border-bottom: 1px solid $primary-color;
         max-width: 104.52px;
         margin-right: 5px;
@@ -581,7 +587,7 @@ section {
         line-height: 24px;
     }
 
-   
+
 }
 
 
@@ -614,6 +620,7 @@ section {
             font-size: 22px;
             font-weight: bold;
             margin: 62px 221.77px 0px 221.23px;
+            text-align: center;
         }
 
         .tag-line-content {
@@ -627,12 +634,12 @@ section {
         }
 
         button {
-            max-width: 165px;
+            max-width: fit-content;
             width: 100%;
             border-radius: 40px;
             background-color: $primary-color;
             color: #ffffff;
-            padding: 8px 26.25px 12px 26px;
+            // padding: 8px 26.25px 12px 26px;
             margin: 0px 192.87px 4px 192.87px;
         }
     }
@@ -726,8 +733,8 @@ section {
                 font-family: Arial, Helvetica, sans-serif;
             }
 
-            span{
-                &:hover{
+            span {
+                &:hover {
                     cursor: pointer;
                 }
             }
@@ -870,12 +877,12 @@ section {
                 margin: 34px 0px 0px 3px;
                 font-family: Arial, Helvetica, sans-serif;
 
-                &:hover{
+                &:hover {
                     cursor: pointer;
-                }                
+                }
             }
 
-            
+
 
             .tools-content-and-links {
                 border: 1px black;
@@ -935,8 +942,7 @@ section {
     padding: 60px 0px 60px 0px;
 
     .reviews {
-        max-width: auto;
-        width: 100%;
+        max-width: 100%;
         background-color: #ffd02f;
 
         .reviews-content {
@@ -969,7 +975,7 @@ section {
                     margin: 0px 410.42px 1px 410.61px;
                     border-bottom: 1px solid #050038;
 
-                    &:hover{
+                    &:hover {
                         cursor: pointer;
                     }
                 }
@@ -1230,7 +1236,7 @@ section {
         font-size: 18px;
         margin: 0px 428.66px 40px 428.66px;
 
-        &:hover{
+        &:hover {
             cursor: pointer;
         }
     }
@@ -1305,6 +1311,7 @@ section {
 
         .third-review-title {
             margin: 36px 36px 34.3px 36px;
+
             img {
                 border: transparent 1px solid;
                 box-shadow: 7px 3px 20px 5px #bcb5b521;
@@ -1376,7 +1383,7 @@ section {
                 border: 1px rgba(255, 255, 255, 0.59);
                 border-bottom: 1px solid rgba(255, 255, 255, 0.59);
 
-                &:hover{
+                &:hover {
                     cursor: pointer;
                 }
             }
@@ -1395,12 +1402,12 @@ section {
     padding: 40px 20px 40px 20px;
 
     .lists {
-        max-width: auto;
-        width: 100%;
+        max-width: 100%;
         color: #ffffff;
         font-family: Arial, Helvetica, sans-serif;
         margin: 0 auto;
         margin-bottom: 100px;
+        justify-content: space-between;
 
         .first-list {
             max-width: 272px;
@@ -1417,7 +1424,7 @@ section {
                 margin: 24px 10px 20px 10px;
                 font-size: 16px;
                 line-height: 24px;
-                
+
 
                 .product-links {
                     max-width: 252px;
@@ -1462,7 +1469,7 @@ section {
                 .demo-product-link {
                     margin: 18px 143.39px 0px 0px;
 
-                    u{
+                    u {
                         cursor: pointer;
                     }
                 }
@@ -1679,7 +1686,7 @@ section {
                 .contact-sales-link {
                     margin: 18px 117.84px 0px 0px;
 
-                    u{
+                    u {
                         cursor: pointer;
                     }
                 }
@@ -1688,82 +1695,86 @@ section {
         }
     }
 
-    .policy-and-links-outer-border{
-        margin:0px 10px;
+    .policy-and-links-outer-border {
+        margin: 0px 10px;
         padding-top: 41px;
         border-top: 1px solid #9b99af;
-        
 
-        .policy-and-links-inner-border{
+
+        .policy-and-links-inner-border {
             justify-content: space-between;
             flex-wrap: wrap;
-            .social-media-and-cookies{
+
+            .social-media-and-cookies {
                 max-width: 875.19px;
                 width: 100%;
                 color: white;
 
-                ul{
+                ul {
                     max-width: 216px;
                     padding-left: 0px;
                     margin: 30px 24px 26px 0px;
                     align-items: center;
 
-                    li{
+                    li {
                         list-style: none;
-                        a{
+
+                        a {
                             font-size: 24px;
                             color: white;
                         }
 
-                        &.margin{
+                        &.margin {
                             margin-left: 24px;
                         }
                     }
                 }
 
-                .terms-and-cookies{
+                .terms-and-cookies {
                     max-width: 635.19px;
                     width: 100%;
                     margin: 28.5px 0px 28.5px 0px;
                     align-items: center;
                     justify-content: space-between;
 
-                    .globe{
+                    .globe {
                         justify-content: space-between;
                         max-width: 58.08px;
                         width: 100%;
                         font-size: 24px;
                         font-family: Arial, Helvetica, sans-serif;
-                        &:hover{
+
+                        &:hover {
                             cursor: pointer;
                         }
 
-                        .language{
+                        .language {
                             line-height: 24px;
                             font-size: 18px;
 
                         }
                     }
 
-                    .policy-terms-cookies{
+                    .policy-terms-cookies {
                         max-width: 553.11px;
                         width: 100%;
                         font-family: Arial, Helvetica, sans-serif;
                         justify-content: space-between;
-                        .copyright{
+
+                        .copyright {
                             font-size: 15px;
                             line-height: 24px;
 
-                            &:hover{
+                            &:hover {
                                 cursor: pointer;
                             }
                         }
 
-                        .footer-links{
+                        .footer-links {
                             font-size: 16px;
                             line-height: 24px;
 
-                            &:hover{
+                            &:hover {
                                 cursor: pointer;
                             }
                         }
@@ -1771,18 +1782,19 @@ section {
                 }
             }
 
-            .stors{
+            .stors {
                 justify-content: space-between;
                 background-color: #050038;
                 align-items: center;
                 max-width: 355px;
                 width: 100%;
-                
 
-                img{
+
+                img {
                     border-color: #050038;
                     border-radius: 8px;
-                    &:hover{
+
+                    &:hover {
                         cursor: pointer;
                     }
                 }
