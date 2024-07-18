@@ -150,7 +150,7 @@ section {
 .header .sidebar .direction {
   flex-direction: row;
 }
-@media (max-width: 768px) {
+@media (max-width: 1130px) {
   .header .hideOnTab {
     display: none;
   }
@@ -165,9 +165,9 @@ section {
     display: none;
   }
 }
-@media (max-width: 426px) {
-  .header .hideOnMobile {
-    display: none;
+@media (max-width: 1130px) {
+  .header .shiftButton {
+    margin-left: 19px;
   }
 }
 .header .il {
@@ -192,6 +192,7 @@ section {
   font-family: Helvetica;
   height: 50px;
   width: 100%;
+  white-space: nowrap;
 }
 
 .dsn {
@@ -250,7 +251,8 @@ section {
 }
 .dsn .right-img img {
   width: 100%;
-  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .dsn .lne {
   margin: 7px 180px 0px 0px;
@@ -265,6 +267,50 @@ section {
 .dsn .rate {
   border: 1px black;
   margin: 41px 90px 24px 0px;
+}
+.dsn .ration-card {
+  border: 1px solid #ccc;
+  border-style: none;
+  padding: 14px;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #f5f5f7;
+  font-family: Arial, sans-serif;
+  display: flex;
+  border-radius: 8px;
+}
+.dsn .rating {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  max-width: 137px;
+  width: 100%;
+  height: 32px;
+}
+.dsn .stars {
+  width: 137px;
+  height: 15px;
+}
+.dsn .review-count {
+  font-size: 11px;
+  line-height: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #050038;
+  max-width: 124px;
+  width: 100%;
+  height: 15px;
+  margin-top: 4px;
+}
+.dsn .logos {
+  display: flex;
+  max-width: 185.36px;
+  width: 100%;
+  height: 32px;
+}
+.dsn .logos svg {
+  display: flex;
+  height: 32px;
+  margin-left: 14.33px;
 }
 
 .trusted-users-logos {
@@ -294,6 +340,11 @@ section {
   display: flex;
   align-items: center;
   margin-bottom: 60px;
+}
+.trusted-users-logos .logos img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .header-for-cards {
@@ -471,11 +522,8 @@ section {
   margin-top: 40px;
   font-family: Arial, Helvetica, sans-serif;
 }
-.work-together .link:hover {
-  cursor: pointer;
-}
 .work-together .underline-text-link {
-  border-bottom: 1px solid #4262ff;
+  border-bottom: 2px solid #4262ff;
   max-width: 104.52px;
   margin-right: 5px;
   font-size: 18px;
@@ -487,10 +535,20 @@ section {
   justify-content: flex-end;
   margin-left: 20px;
 }
+.work-together-image img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 
 .tools-image {
   margin-left: 10px;
   margin-right: 114.95px;
+}
+.tools-image img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .tools {
@@ -522,11 +580,8 @@ section {
   margin-top: 52px;
   font-family: Arial, Helvetica, sans-serif;
 }
-.tools .link:hover {
-  cursor: pointer;
-}
 .tools .underline-text-link {
-  border-bottom: 1px solid #4262ff;
+  border-bottom: 2px solid #4262ff;
   max-width: 104.52px;
   margin-right: 5px;
   font-size: 18px;
@@ -540,9 +595,13 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  padding: 135px 152px 160px 750px;
-  max-width: -moz-max-content;
-  max-width: max-content;
+  padding: 135px 152px 160px 738px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  box-sizing: unset;
 }
 .ways-we-work .tag-line {
   max-width: 550px;
@@ -579,6 +638,11 @@ section {
   background-color: #4262ff;
   color: #ffffff;
   margin: 0px 192.87px 4px 192.87px;
+  height: 40px;
+  align-items: center;
+  text-align: center;
+  text-wrap: none;
+  white-space: nowrap;
 }
 
 .built-for-work {
@@ -655,11 +719,13 @@ section {
   margin: 35px 0px 0px 19px;
   font-family: Arial, Helvetica, sans-serif;
 }
-.built-for-work .tabs-content .left-border span:hover {
-  cursor: pointer;
-}
 .built-for-work .tabs-content .tabs-image {
   margin: 0px;
+}
+.built-for-work .tabs-content .tabs-image img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .built-for-teams {
@@ -770,9 +836,6 @@ section {
   margin: 34px 0px 0px 3px;
   font-family: Arial, Helvetica, sans-serif;
 }
-.built-for-teams .tabs-content .left-border .link:hover {
-  cursor: pointer;
-}
 .built-for-teams .tabs-content .left-border .tools-content-and-links {
   border: 1px black;
   max-width: 304px;
@@ -812,6 +875,11 @@ section {
 .built-for-teams .tabs-content .tabs-image {
   margin: 0px;
 }
+.built-for-teams .tabs-content .tabs-image img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 
 .miro-trust {
   padding: 60px 0px 60px 0px;
@@ -847,9 +915,6 @@ section {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px 410.42px 1px 410.61px;
   border-bottom: 1px solid #050038;
-}
-.miro-trust .reviews .reviews-content .miro-trust-line span:hover {
-  cursor: pointer;
 }
 .miro-trust .reviews .ratings {
   border: 1px black;
@@ -1063,17 +1128,21 @@ section {
   margin: 0px 198.03px 24px 197.97px;
 }
 .reviews button {
-  max-width: 285.8px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   width: 100%;
+  height: 48px;
   border-radius: 24px;
   background-color: #ffffff;
   border-color: #4262ff;
   color: #4262ff;
-  padding: 10px 31.69px 14px 35px;
+  padding: 0 31.69px 0 35px;
   line-height: 24px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   margin: 0px 428.66px 40px 428.66px;
+  white-space: nowrap;
+  text-align: center;
 }
 .reviews button:hover {
   cursor: pointer;
@@ -1207,6 +1276,7 @@ section {
   margin: 0px 452.89px 0px 452.88px;
   background-color: #4262ff;
   color: #ffffff;
+  white-space: nowrap;
 }
 
 .footer {
@@ -1532,4 +1602,4 @@ section {
 
 .blue-text {
   color: #4262ff;
-}/*# sourceMappingURL=fd.css.map */
+}/*# sourceMappingURL=main.css.map */

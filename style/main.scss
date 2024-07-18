@@ -130,12 +130,12 @@ section {
             padding-left: 10px;
         }
 
-        .direction{
+        .direction {
             flex-direction: row;
         }
     }
 
-    @media(max-width: 768px) {
+    @media(max-width: 1130px) {
         .hideOnTab {
             display: none;
         }
@@ -154,9 +154,9 @@ section {
         }
     }
 
-    @media(max-width : 426px) {
-        .hideOnMobile {
-            display: none;
+    @media(max-width : 1130px) {
+        .shiftButton{
+            margin-left: 19px ;
         }
     }
 
@@ -187,6 +187,7 @@ section {
         font-family: Helvetica;
         height: 50px;
         width: 100%;
+        white-space: nowrap;
     }
 }
 
@@ -257,7 +258,7 @@ section {
 
         img {
             width: 100%;
-            height: 100%;
+            object-fit: contain;
         }
     }
 
@@ -276,6 +277,57 @@ section {
     .rate {
         border: 1px black;
         margin: 41px 90px 24px 0px;
+    }
+
+    .ration-card {
+        border: 1px solid #ccc;
+        border-style: none;
+        padding: 14px;
+        width: fit-content;
+        background-color: #f5f5f7;
+        font-family: Arial, sans-serif;
+        display: flex;
+        border-radius: 8px;
+    }
+
+    .rating {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        max-width: 137px;
+        width: 100%;
+        height: 32px;
+
+    }
+
+    .stars {
+        width: 137px;
+        height: 15px;
+    }
+
+    .review-count {
+        font-size: 11px;
+        line-height: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #050038;
+        max-width: 124px;
+        width: 100%;
+        height: 15px;
+        margin-top: 4px;
+    }
+
+    .logos {
+        display: flex;
+        max-width: 185.36px;
+        width: 100%;
+        height: 32px;
+
+        svg {
+            display: flex;
+            height: 32px;
+            margin-left: 14.33px;
+        }
+
     }
 }
 
@@ -309,6 +361,11 @@ section {
         display: flex;
         align-items: center;
         margin-bottom: 60px;
+
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
     }
 }
 
@@ -511,13 +568,13 @@ section {
         margin-top: 40px;
         font-family: Arial, Helvetica, sans-serif;
 
-        &:hover {
-            cursor: pointer;
-        }
+        // &:hover {
+        //     cursor: pointer;
+        // }
     }
 
     .underline-text-link {
-        border-bottom: 1px solid $primary-color;
+        border-bottom: 2px solid $primary-color;
         max-width: 104.52px;
         margin-right: 5px;
         font-size: 18px;
@@ -533,12 +590,24 @@ section {
     display: flex;
     justify-content: flex-end;
     margin-left: 20px;
+
+    img {
+        width: 100%;
+        object-fit: contain;
+    }
+
 }
 
 .tools-image {
     margin-left: 10px;
     margin-right: 114.95px;
+
+    img {
+        width: 100%;
+        object-fit: contain;
+    }
 }
+
 
 .tools {
     max-width: 465.05px;
@@ -572,15 +641,15 @@ section {
         margin-top: 52px;
         font-family: Arial, Helvetica, sans-serif;
 
-        &:hover {
-            cursor: pointer;
-        }
+        // &:hover {
+        //     cursor: pointer;
+        // }
 
     }
 
 
     .underline-text-link {
-        border-bottom: 1px solid $primary-color;
+        border-bottom: 2px solid $primary-color;
         max-width: 104.52px;
         margin-right: 5px;
         font-size: 18px;
@@ -598,8 +667,11 @@ section {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-    padding: 135px 152px 160px 750px;
-    max-width: max-content;
+    padding: 135px 152px 160px 738px;
+    max-width: fit-content;
+    width: 100%;
+    object-fit: contain;
+    box-sizing: unset;
 
 
 
@@ -641,6 +713,11 @@ section {
             color: #ffffff;
             // padding: 8px 26.25px 12px 26px;
             margin: 0px 192.87px 4px 192.87px;
+            height: 40px;
+            align-items: center;
+            text-align: center;
+            text-wrap: none;
+            white-space: nowrap;
         }
     }
 }
@@ -733,15 +810,21 @@ section {
                 font-family: Arial, Helvetica, sans-serif;
             }
 
-            span {
-                &:hover {
-                    cursor: pointer;
-                }
-            }
+            // span {
+            //     &:hover {
+            //         cursor: pointer;
+            //     }
+            // }
         }
 
         .tabs-image {
             margin: 0px;
+
+            img {
+                width: 100%;
+                object-fit: contain;
+            }
+
         }
     }
 
@@ -877,9 +960,9 @@ section {
                 margin: 34px 0px 0px 3px;
                 font-family: Arial, Helvetica, sans-serif;
 
-                &:hover {
-                    cursor: pointer;
-                }
+                // &:hover {
+                //     cursor: pointer;
+                // }
             }
 
 
@@ -931,6 +1014,12 @@ section {
 
         .tabs-image {
             margin: 0px;
+
+            img {
+                width: 100%;
+                object-fit: contain;
+            }
+
         }
     }
 
@@ -975,9 +1064,9 @@ section {
                     margin: 0px 410.42px 1px 410.61px;
                     border-bottom: 1px solid #050038;
 
-                    &:hover {
-                        cursor: pointer;
-                    }
+                    // &:hover {
+                    //     cursor: pointer;
+                    // }
                 }
             }
         }
@@ -1224,17 +1313,20 @@ section {
     }
 
     button {
-        max-width: 285.8px;
+        max-width: fit-content;
         width: 100%;
+        height: 48px;
         border-radius: 24px;
         background-color: #ffffff;
         border-color: $primary-color;
         color: $primary-color;
-        padding: 10px 31.69px 14px 35px;
+        padding: 0 31.69px 0 35px;
         line-height: 24px;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 18px;
         margin: 0px 428.66px 40px 428.66px;
+        white-space: nowrap;
+        text-align: center;
 
         &:hover {
             cursor: pointer;
@@ -1393,6 +1485,7 @@ section {
             margin: 0px 452.89px 0px 452.88px;
             background-color: $primary-color;
             color: #ffffff;
+            white-space: nowrap;
         }
     }
 }
