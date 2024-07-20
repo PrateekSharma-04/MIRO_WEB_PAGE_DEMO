@@ -160,6 +160,12 @@ section {
         }
     }
 
+    @media(max-width : 630px) {
+        .shifttitle{
+            margin-right: 15px;
+        }
+    }
+
     .il {
         display: inline;
     }
