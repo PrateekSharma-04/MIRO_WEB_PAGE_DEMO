@@ -82,7 +82,7 @@ section {
 }
 
 .padding {
-  padding: 60px 150px 60px 150px;
+  padding: 60px 0;
 }
 
 .header {
@@ -203,7 +203,6 @@ section {
 .dsn {
   border: 1px black;
   display: flex;
-  flex-wrap: wrap;
   margin-top: 60px;
 }
 .dsn .left-border {
@@ -253,6 +252,7 @@ section {
 }
 .dsn .right-img {
   border: 1px black;
+  width: 100%;
 }
 .dsn .right-img img {
   width: 100%;
@@ -397,6 +397,11 @@ section {
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 40px;
+}
+@media (max-width: 1079px) {
+  .cards .card {
+    justify-content: center;
+  }
 }
 .cards .first-card {
   display: flex;
@@ -892,16 +897,28 @@ section {
 .miro-trust .reviews {
   max-width: 100%;
   background-color: #ffd02f;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .miro-trust .reviews .reviews-content {
   max-width: 1140px;
   width: 100%;
   margin: 0px auto;
-  padding: 120px 10px 0px 10px;
+  padding-top: 120px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .miro-trust .reviews .reviews-content .miro-trust-line {
   max-width: 1120px;
   width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .miro-trust .reviews .reviews-content .miro-trust-line h1 {
   max-width: 498px;
@@ -910,7 +927,7 @@ section {
   font-size: 48px;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: -1px;
-  margin: 0px 311.28px 17px 310.72px;
+  margin: 0;
 }
 .miro-trust .reviews .reviews-content .miro-trust-line span {
   max-width: 298.97px;
@@ -918,7 +935,7 @@ section {
   line-height: 24px;
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0px 410.42px 1px 410.61px;
+  margin-top: 17px;
   border-bottom: 1px solid #050038;
 }
 .miro-trust .reviews .ratings {
@@ -928,69 +945,62 @@ section {
   margin: 0px auto;
   margin-top: 40px;
 }
+.miro-trust .reviews .ratings .top-rating-box {
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.miro-trust .reviews .ratings .bottom-rating-box {
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
 .miro-trust .reviews .ratings .first-rating-box {
   max-width: 359.95px;
-  width: 100%;
-  margin: 0px 20px 64px 10px;
+  width: 33%;
 }
 .miro-trust .reviews .ratings .second-rating-box {
   max-width: 359.95px;
-  width: 100%;
-  margin: 0px 20px 88px 0px;
+  width: 33%;
 }
 .miro-trust .reviews .ratings .third-rating-box {
   max-width: 359.95px;
-  width: 100%;
-  margin: 0px 10.14px 88px 0px;
+  width: 33%;
 }
 .miro-trust .reviews .ratings .fourth-rating-box {
   max-width: 359.95px;
-  width: 100%;
-  margin: 0px 20px 120px 10px;
+  width: 33%;
 }
 .miro-trust .reviews .ratings .fifth-rating-box {
   max-width: 359.95px;
-  width: 100%;
-  margin: 0px 20px 120px 0px;
+  width: 33%;
 }
 .miro-trust .reviews .ratings .sixth-rating-box {
   max-width: 359.95px;
-  width: 100%;
-  margin: 0px 10.14px 120px 0px;
+  width: 33%;
 }
 .miro-trust .reviews .ratings .first-rating {
   border: 1px black;
-  padding: 94.54px 123.64px 12.36px 124.26px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .miro-trust .reviews .ratings .first-rating-content {
   border: 1px black;
-  margin: 24px 13.39px 0px 13.59px;
   line-height: 24px;
   font-size: 18px;
   color: #050038;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-}
-.miro-trust .reviews .ratings .first-rating {
-  border: 1px black;
-  padding: 94.54px 123.64px 12.36px 124.26px;
-}
-.miro-trust .reviews .ratings .first-rating-content {
-  border: 1px black;
-  margin: 24px 13.39px 0px 13.59px;
-  line-height: 24px;
-  font-size: 18px;
-  color: #050038;
-  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 .miro-trust .reviews .ratings .second-rating {
   border: 1px black;
-  padding: 95.18px 142.66px 13px 143.07px;
 }
 .miro-trust .reviews .ratings .second-rating-content {
   border: 1px black;
-  margin: 24px 28.97px 0px 28.98px;
   line-height: 24px;
   font-size: 18px;
   color: #050038;
@@ -999,11 +1009,9 @@ section {
 }
 .miro-trust .reviews .ratings .third-rating {
   border: 1px black;
-  padding: 94.54px 107.43px 12.36px 106.92px;
 }
 .miro-trust .reviews .ratings .third-rating-content {
   border: 1px black;
-  margin: 24px 38.39px 0px 37.56px;
   line-height: 24px;
   font-size: 18px;
   color: #050038;
@@ -1012,11 +1020,9 @@ section {
 }
 .miro-trust .reviews .ratings .fourth-rating {
   border: 1px black;
-  padding: 95.01px 45.4px 5.67px 66.67px;
 }
 .miro-trust .reviews .ratings .fourth-rating-content {
   border: 1px black;
-  margin: 23.97px 13.72px 0px 12.23px;
   line-height: 24px;
   font-size: 18px;
   color: #050038;
@@ -1025,11 +1031,9 @@ section {
 }
 .miro-trust .reviews .ratings .fifth-rating {
   border: 1px black;
-  padding: 95.18px 88.99px 13.36px 89.59px;
 }
 .miro-trust .reviews .ratings .fifth-rating-content {
   border: 1px black;
-  margin: 23.97px 81.64px 0px 81.31px;
   line-height: 24px;
   font-size: 18px;
   color: #050038;
@@ -1038,11 +1042,9 @@ section {
 }
 .miro-trust .reviews .ratings .sixth-rating {
   border: 1px black;
-  padding: 94.54px 94.52px 12.36px 93.67px;
 }
 .miro-trust .reviews .ratings .sixth-rating-content {
   border: 1px black;
-  margin: 24px 20.06px 0px 19.89px;
   line-height: 24px;
   font-size: 18px;
   color: #050038;
@@ -1120,6 +1122,7 @@ section {
   max-width: 1120px;
   width: 100%;
   margin: 0 auto;
+  margin-top: 60px;
   margin-bottom: 120px;
 }
 .reviews h1 {
@@ -1295,6 +1298,7 @@ section {
   margin: 0 auto;
   margin-bottom: 100px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .footer .lists .first-list {
   max-width: 272px;
@@ -1519,6 +1523,7 @@ section {
   margin: 0px 10px;
   padding-top: 41px;
   border-top: 1px solid #9b99af;
+  flex-wrap: wrap;
 }
 .footer .policy-and-links-outer-border .policy-and-links-inner-border {
   justify-content: space-between;
@@ -1528,6 +1533,7 @@ section {
   max-width: 875.19px;
   width: 100%;
   color: white;
+  flex-wrap: wrap;
 }
 .footer .policy-and-links-outer-border .policy-and-links-inner-border .social-media-and-cookies ul {
   max-width: 216px;
@@ -1551,6 +1557,7 @@ section {
   margin: 28.5px 0px 28.5px 0px;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .footer .policy-and-links-outer-border .policy-and-links-inner-border .social-media-and-cookies .terms-and-cookies .globe {
   justify-content: space-between;
@@ -1571,6 +1578,7 @@ section {
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .footer .policy-and-links-outer-border .policy-and-links-inner-border .social-media-and-cookies .terms-and-cookies .policy-terms-cookies .copyright {
   font-size: 15px;
@@ -1588,6 +1596,7 @@ section {
 }
 .footer .policy-and-links-outer-border .policy-and-links-inner-border .stors {
   justify-content: space-between;
+  flex-wrap: wrap;
   background-color: #050038;
   align-items: center;
   max-width: 355px;

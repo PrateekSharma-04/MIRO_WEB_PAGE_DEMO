@@ -52,12 +52,14 @@ section {
 }
 
 .padding {
-    padding: 60px 150px 60px 150px;
+    padding: 60px 0;
 }
 
 
 // ===========global css=============
 
+
+// =============Header css =================
 
 .header {
     padding: 24px 24px 34px 30px;
@@ -155,13 +157,13 @@ section {
     }
 
     @media(max-width : 1130px) {
-        .shiftButton{
-            margin-left: 19px ;
+        .shiftButton {
+            margin-left: 19px;
         }
     }
 
     @media(max-width : 630px) {
-        .shifttitle{
+        .shifttitle {
             margin-right: 15px;
         }
     }
@@ -197,10 +199,13 @@ section {
     }
 }
 
+// =============Header css =================
+
+// =============take ideas from better to best ==========
+
 .dsn {
     border: 1px black;
     display: flex;
-    flex-wrap: wrap;
     margin-top: 60px;
 
 
@@ -260,7 +265,7 @@ section {
 
     .right-img {
         border: 1px black;
-
+        width: 100%;
 
         img {
             width: 100%;
@@ -337,6 +342,9 @@ section {
     }
 }
 
+// =============take ideas from better to best ==========
+
+// =============trusted user logos ============
 .trusted-users-logos {
     display: flex;
     flex-direction: column;
@@ -374,6 +382,10 @@ section {
         }
     }
 }
+
+// =============trusted user logos ============
+
+// =============collaborate without constraints=============
 
 .header-for-cards {
     display: flex;
@@ -421,6 +433,12 @@ section {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 40px;
+
+    @media(max-width:1079px) {
+        .card {
+            justify-content: center;
+        }
+    }
 
     .first-card {
         display: flex;
@@ -525,6 +543,9 @@ section {
     }
 }
 
+// =============collaborate without constraints=============
+
+// =============Sign in button=============
 .center-button {
     margin-top: 28px;
     display: flex;
@@ -541,6 +562,9 @@ section {
 
 }
 
+// =============Sign in button=============
+
+// =============work together=============
 .work-together {
 
     max-width: 550px;
@@ -589,9 +613,6 @@ section {
 
 }
 
-
-
-
 .work-together-image {
     display: flex;
     justify-content: flex-end;
@@ -603,6 +624,10 @@ section {
     }
 
 }
+
+// =============work together=============
+
+// =============Connect your tools=============
 
 .tools-image {
     margin-left: 10px;
@@ -665,6 +690,9 @@ section {
 
 }
 
+// =============Connect your tools=============
+
+// =============Ways we work=============
 
 .ways-we-work {
     display: flex;
@@ -727,6 +755,10 @@ section {
         }
     }
 }
+
+// =============Ways we work=============
+
+// =============built for work=============
 
 .built-for-work {
     border: 1px black;
@@ -835,6 +867,10 @@ section {
     }
 
 }
+
+// =============built for work=============
+
+// =============built for teams=============
 
 .built-for-teams {
     border: 1px black;
@@ -1031,6 +1067,9 @@ section {
 
 }
 
+// =============built for teams=============
+
+// =============Miro trust================
 
 .miro-trust {
 
@@ -1039,16 +1078,29 @@ section {
     .reviews {
         max-width: 100%;
         background-color: #ffd02f;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
 
         .reviews-content {
             max-width: 1140px;
             width: 100%;
             margin: 0px auto;
-            padding: 120px 10px 0px 10px;
+            padding-top: 120px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            // padding: 120px 10px 0px 10px;
 
             .miro-trust-line {
                 max-width: 1120px;
                 width: 100%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
 
 
                 h1 {
@@ -1058,7 +1110,7 @@ section {
                     font-size: 48px;
                     font-family: Arial, Helvetica, sans-serif;
                     letter-spacing: -1px;
-                    margin: 0px 311.28px 17px 310.72px;
+                    margin: 0;
                 }
 
                 span {
@@ -1067,7 +1119,8 @@ section {
                     line-height: 24px;
                     font-size: 18px;
                     font-family: Arial, Helvetica, sans-serif;
-                    margin: 0px 410.42px 1px 410.61px;
+                    // margin: 0px 410.42px 1px 410.61px;
+                    margin-top: 17px;
                     border-bottom: 1px solid #050038;
 
                     // &:hover {
@@ -1084,80 +1137,85 @@ section {
             margin: 0px auto;
             margin-top: 40px;
 
+            .top-rating-box {
+                justify-content: space-around;
+                align-items: center;
+                text-align: center;
+
+            }
+
+            .bottom-rating-box{
+                justify-content: space-around;
+                align-items: center;
+                text-align: center;
+            }
+
             .first-rating-box {
                 max-width: 359.95px;
-                width: 100%;
-                margin: 0px 20px 64px 10px;
+                width: 33%;
+                // margin: 0px 20px 64px 10px;
+
             }
 
             .second-rating-box {
                 max-width: 359.95px;
-                width: 100%;
-                margin: 0px 20px 88px 0px;
+                width: 33%;
+                // margin: 0px 20px 88px 0px;
             }
 
             .third-rating-box {
                 max-width: 359.95px;
-                width: 100%;
-                margin: 0px 10.14px 88px 0px;
+                width: 33%;
+                // margin: 0px 10.14px 88px 0px;
             }
 
             .fourth-rating-box {
                 max-width: 359.95px;
-                width: 100%;
-                margin: 0px 20px 120px 10px;
+                width: 33%;
+                // margin: 0px 20px 120px 10px;
             }
 
             .fifth-rating-box {
                 max-width: 359.95px;
-                width: 100%;
-                margin: 0px 20px 120px 0px;
+                width: 33%;
+                // margin: 0px 20px 120px 0px;
             }
 
             .sixth-rating-box {
                 max-width: 359.95px;
-                width: 100%;
-                margin: 0px 10.14px 120px 0px;
+                width: 33%;
+                // margin: 0px 10.14px 120px 0px;
             }
 
             .first-rating {
                 border: 1px black;
-                padding: 94.54px 123.64px 12.36px 124.26px;
+                // padding: 94.54px 123.64px 12.36px 124.26px;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
             }
 
             .first-rating-content {
                 border: 1px black;
-                margin: 24px 13.39px 0px 13.59px;
+                // margin: 24px 13.39px 0px 13.59px;
                 line-height: 24px;
                 font-size: 18px;
                 color: #050038;
                 font-family: Arial, Helvetica, sans-serif;
                 text-align: center;
-            }
-
-            .first-rating {
-                border: 1px black;
-                padding: 94.54px 123.64px 12.36px 124.26px;
-            }
-
-            .first-rating-content {
-                border: 1px black;
-                margin: 24px 13.39px 0px 13.59px;
-                line-height: 24px;
-                font-size: 18px;
-                color: #050038;
-                font-family: Arial, Helvetica, sans-serif;
+                justify-content: center;
+                align-items: center;
                 text-align: center;
             }
 
             .second-rating {
                 border: 1px black;
-                padding: 95.18px 142.66px 13px 143.07px;
+                // padding: 95.18px 142.66px 13px 143.07px;
             }
 
             .second-rating-content {
                 border: 1px black;
-                margin: 24px 28.97px 0px 28.98px;
+                // margin: 24px 28.97px 0px 28.98px;
                 line-height: 24px;
                 font-size: 18px;
                 color: #050038;
@@ -1167,12 +1225,12 @@ section {
 
             .third-rating {
                 border: 1px black;
-                padding: 94.54px 107.43px 12.36px 106.92px;
+                // padding: 94.54px 107.43px 12.36px 106.92px;
             }
 
             .third-rating-content {
                 border: 1px black;
-                margin: 24px 38.39px 0px 37.56px;
+                // margin: 24px 38.39px 0px 37.56px;
                 line-height: 24px;
                 font-size: 18px;
                 color: #050038;
@@ -1182,12 +1240,12 @@ section {
 
             .fourth-rating {
                 border: 1px black;
-                padding: 95.01px 45.4px 5.67px 66.67px;
+                // padding: 95.01px 45.4px 5.67px 66.67px;
             }
 
             .fourth-rating-content {
                 border: 1px black;
-                margin: 23.97px 13.72px 0px 12.23px;
+                // margin: 23.97px 13.72px 0px 12.23px;
                 line-height: 24px;
                 font-size: 18px;
                 color: #050038;
@@ -1197,12 +1255,12 @@ section {
 
             .fifth-rating {
                 border: 1px black;
-                padding: 95.18px 88.99px 13.36px 89.59px;
+                // padding: 95.18px 88.99px 13.36px 89.59px;
             }
 
             .fifth-rating-content {
                 border: 1px black;
-                margin: 23.97px 81.64px 0px 81.31px;
+                // margin: 23.97px 81.64px 0px 81.31px;
                 line-height: 24px;
                 font-size: 18px;
                 color: #050038;
@@ -1212,12 +1270,12 @@ section {
 
             .sixth-rating {
                 border: 1px black;
-                padding: 94.54px 94.52px 12.36px 93.67px;
+                // padding: 94.54px 94.52px 12.36px 93.67px;
             }
 
             .sixth-rating-content {
                 border: 1px black;
-                margin: 24px 20.06px 0px 19.89px;
+                // margin: 24px 20.06px 0px 19.89px;
                 line-height: 24px;
                 font-size: 18px;
                 color: #050038;
@@ -1301,10 +1359,15 @@ section {
     }
 }
 
+// =============Miro trust================
+
+// =============reviews===============
+
 .reviews {
     max-width: 1120px;
     width: 100%;
     margin: 0 auto;
+    margin-top: 60px;
     margin-bottom: 120px;
 
     h1 {
@@ -1438,6 +1501,9 @@ section {
     }
 }
 
+// =============reviews===============
+
+// =============joining link==============
 .joining-link {
     max-width: 1120px;
     width: 100%;
@@ -1496,6 +1562,10 @@ section {
     }
 }
 
+// =============joining link==============
+
+// =============footer==============
+
 .footer {
     background-color: #050038;
     padding: 40px 20px 40px 20px;
@@ -1507,6 +1577,7 @@ section {
         margin: 0 auto;
         margin-bottom: 100px;
         justify-content: space-between;
+        flex-wrap: wrap;
 
         .first-list {
             max-width: 272px;
@@ -1798,6 +1869,7 @@ section {
         margin: 0px 10px;
         padding-top: 41px;
         border-top: 1px solid #9b99af;
+        flex-wrap: wrap;
 
 
         .policy-and-links-inner-border {
@@ -1808,6 +1880,7 @@ section {
                 max-width: 875.19px;
                 width: 100%;
                 color: white;
+                flex-wrap: wrap;
 
                 ul {
                     max-width: 216px;
@@ -1835,6 +1908,7 @@ section {
                     margin: 28.5px 0px 28.5px 0px;
                     align-items: center;
                     justify-content: space-between;
+                    flex-wrap: wrap;
 
                     .globe {
                         justify-content: space-between;
@@ -1859,6 +1933,7 @@ section {
                         width: 100%;
                         font-family: Arial, Helvetica, sans-serif;
                         justify-content: space-between;
+                        flex-wrap: wrap;
 
                         .copyright {
                             font-size: 15px;
@@ -1883,6 +1958,7 @@ section {
 
             .stors {
                 justify-content: space-between;
+                flex-wrap: wrap;
                 background-color: #050038;
                 align-items: center;
                 max-width: 355px;
@@ -1901,6 +1977,9 @@ section {
         }
     }
 }
+
+// =============footer==============
+
 
 // modifier class
 
