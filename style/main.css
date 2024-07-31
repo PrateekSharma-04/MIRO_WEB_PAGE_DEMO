@@ -174,7 +174,7 @@ section {
 .header .sidebar {
   position: fixed;
   top: 0;
-  right: 0;
+  right: -100%;
   height: 100%;
   width: 250px;
   z-index: 999;
@@ -182,17 +182,25 @@ section {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-  display: none;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   list-style: none;
+  transition: 0.75s ease-out;
 }
 .header .sidebar .right-link {
   color: #050038;
   text-decoration: none;
   padding-top: 16px;
   padding-left: 10px;
+}
+.header .sidebar .right-link-1 {
+  color: #050038;
+  text-decoration: none;
+  padding-top: 16px;
+  padding-left: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .header .direction {
   flex-direction: row;
