@@ -88,16 +88,32 @@ section {
     padding: 0 24px 0 30px;
     align-items: center;
 
+    @media(max-width : 1024px){
+        &.pad{
+            padding: 0 16px;
+        }
+    }
+
     .logo {
         margin-bottom: 12px;
     }
 
     .hd {
         padding-left: 24px;
+        position: relative;
+
 
         .left-link {
             color: #050038;
             text-decoration: none;
+        }
+
+        &:hover .dropdown_menu{
+            display: block;
+        }
+
+        &:hover .drop-down-arrow{
+            transform: rotate(180deg);
         }
     }
 
@@ -105,6 +121,30 @@ section {
         margin-left: 13.19px;
         display: flex;
         align-items: flex-end;
+        transition: 0.3s;
+    }
+
+    .dropdown_menu {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+
+        .left-link {
+            color: #050038;
+            text-decoration: none;
+            width: 100%;
+            display: block;
+            padding: 12px 16px;
+            float: none;
+
+            &:hover{
+                background-color: #ddd;
+            }
+        }
     }
 
     .hf-1 {
@@ -148,11 +188,12 @@ section {
             padding-top: 16px;
             padding-left: 10px;
         }
-
-        .direction {
-            flex-direction: row;
-        }
     }
+
+    .direction {
+        flex-direction: row;
+    }
+
 
     @media(max-width: 1130px) {
         .hideOnTab {
@@ -246,8 +287,8 @@ section {
         height: 469px;
         // margin-right: 40px;
 
-        @media(max-width : 769px){
-            &.width{
+        @media(max-width : 769px) {
+            &.width {
                 max-width: 600px;
                 width: 100%;
             }
@@ -264,21 +305,21 @@ section {
         // margin-right: 63.35px;
 
         @media(min-width : 376px) and (max-width : 426px) {
-            &.h1-on-MobileL{
+            &.h1-on-MobileL {
                 font-size: 42px;
                 line-height: 52px;
             }
         }
-        
+
         @media(min-width : 321px) and (max-width : 376px) {
-            &.h1-on-MobileM{
+            &.h1-on-MobileM {
                 font-size: 39px;
                 line-height: 49px;
             }
         }
-        
+
         @media(max-width : 320px) {
-            &.h1-on-MobileS{
+            &.h1-on-MobileS {
                 font-size: 35px;
                 line-height: 45px;
             }
@@ -296,7 +337,7 @@ section {
         margin-bottom: 10px;
 
         @media(max-width : 426px) {
-            &.normal-txt-on-Mobile{
+            &.normal-txt-on-Mobile {
                 font-size: 16px;
                 line-height: 22px;
             }
@@ -321,7 +362,7 @@ section {
         margin-top: 16px;
 
         @media(max-width : 426px) {
-            &.normal-txt-on-Mobile{
+            &.normal-txt-on-Mobile {
                 font-size: 16px;
                 line-height: 22px;
             }
@@ -336,6 +377,12 @@ section {
     .right-img {
         border: 1px black;
         width: 100%;
+
+        @media(max-width : 769px){
+            &.wid{
+                width: 75%;
+            }
+        }
 
         img {
             width: 100%;
@@ -387,8 +434,8 @@ section {
         height: 32px;
         margin-left: 14px;
 
-        @media(max-width : 321px){
-            &.left{
+        @media(max-width : 369px) {
+            &.left {
                 margin-left: 5px;
             }
         }
@@ -421,18 +468,18 @@ section {
             height: 32px;
             margin-left: 14.33px;
 
-            @media(max-width : 321px){
-                &.marg-left{
+            @media(max-width : 369px) {
+                &.marg-left {
                     margin-left: 4px;
                 }
             }
         }
 
-        .margin-right{
+        .margin-right {
             margin-right: 14.33px;
 
-            @media(max-width : 321px){
-                &.marg-right{
+            @media(max-width : 369px) {
+                &.marg-right {
                     margin-right: 3px;
                 }
             }
@@ -451,7 +498,7 @@ section {
     margin-top: 116px;
 
     @media(max-width : 426px) {
-        &.margin-top{
+        &.margin-top {
             margin-top: 70px;
         }
     }
@@ -465,7 +512,7 @@ section {
         font-size: 18px;
 
         @media(max-width : 426px) {
-            &.normal-txt-on-Mobile{
+            &.normal-txt-on-Mobile {
                 font-size: 16px;
                 line-height: 22px;
             }
@@ -523,21 +570,21 @@ section {
         position: relative;
 
         @media(min-width : 376px) and (max-width : 426px) {
-            &.h1-on-MobileL{
+            &.h1-on-MobileL {
                 font-size: 42px;
                 line-height: 52px;
             }
         }
-        
+
         @media(min-width : 321px) and (max-width : 376px) {
-            &.h1-on-MobileM{
+            &.h1-on-MobileM {
                 font-size: 39px;
                 line-height: 49px;
             }
         }
-        
+
         @media(max-width : 320px) {
-            &.h1-on-MobileS{
+            &.h1-on-MobileS {
                 font-size: 35px;
                 line-height: 45px;
             }
@@ -557,8 +604,8 @@ section {
             transform: rotate(11deg);
             letter-spacing: 0.2px;
 
-            @media(max-width : 426px){
-                &.stiker{
+            @media(max-width : 523px) {
+                &.stiker {
                     top: 18px;
                     right: 0;
                 }
@@ -598,7 +645,7 @@ section {
         width: 100%;
 
         @media(max-width : 426px) {
-            &.normal-txt-on-Mobile{
+            &.normal-txt-on-Mobile {
                 font-size: 20px;
                 line-height: 22px;
             }
@@ -621,11 +668,11 @@ section {
         }
 
         @media(max-width : 426px) {
-            &.normal-txt-on-Mobile{
+            &.normal-txt-on-Mobile {
                 font-size: 16px;
                 line-height: 22px;
             }
-        } 
+        }
     }
 
     .second-card {
@@ -646,7 +693,7 @@ section {
         width: 100%;
 
         @media(max-width : 426px) {
-            &.normal-txt-on-Mobile{
+            &.normal-txt-on-Mobile {
                 font-size: 20px;
                 line-height: 22px;
             }
@@ -669,11 +716,11 @@ section {
         }
 
         @media(max-width : 426px) {
-            &.normal-txt-on-Mobile{
+            &.normal-txt-on-Mobile {
                 font-size: 16px;
                 line-height: 22px;
             }
-        } 
+        }
     }
 
     .third-card {
@@ -694,7 +741,7 @@ section {
         width: 100%;
 
         @media(max-width : 426px) {
-            &.normal-txt-on-Mobile{
+            &.normal-txt-on-Mobile {
                 font-size: 20px;
                 line-height: 22px;
             }
@@ -717,11 +764,11 @@ section {
         }
 
         @media(max-width : 426px) {
-            &.normal-txt-on-Mobile{
+            &.normal-txt-on-Mobile {
                 font-size: 16px;
                 line-height: 22px;
             }
-        } 
+        }
     }
 }
 
@@ -780,29 +827,29 @@ section {
             max-width: 440.7px;
             width: 100%;
 
-            @media(max-width : 769px){
-                &.width{
+            @media(max-width : 769px) {
+                &.width {
                     max-width: fit-content;
                     width: 100%;
                 }
             }
 
             @media(min-width : 376px) and (max-width : 426px) {
-                &.h1-on-MobileL{
+                &.h1-on-MobileL {
                     font-size: 42px;
                     line-height: 52px;
                 }
             }
-            
+
             @media(min-width : 321px) and (max-width : 376px) {
-                &.h1-on-MobileM{
+                &.h1-on-MobileM {
                     font-size: 39px;
                     line-height: 49px;
                 }
             }
-            
+
             @media(max-width : 320px) {
-                &.h1-on-MobileS{
+                &.h1-on-MobileS {
                     font-size: 35px;
                     line-height: 45px;
                 }
@@ -820,15 +867,15 @@ section {
             color: #050038a0;
 
             @media(max-width : 426px) {
-                &.normal-txt-on-Mobile{
+                &.normal-txt-on-Mobile {
                     font-size: 16px;
                     line-height: 22px;
                 }
             }
 
 
-            @media(max-width : 769px){
-                &.width{
+            @media(max-width : 769px) {
+                &.width {
                     max-width: fit-content;
                     width: 100%;
                 }
@@ -854,7 +901,7 @@ section {
             line-height: 24px;
 
             @media(max-width : 426px) {
-                &.normal-txt-on-Mobile{
+                &.normal-txt-on-Mobile {
                     font-size: 16px;
                     line-height: 22px;
                 }
@@ -865,6 +912,7 @@ section {
 }
 
 .work-together-image {
+    align-items: center;
 
     img {
         width: 100%;
@@ -878,6 +926,7 @@ section {
 // =============Connect your tools=============
 
 .tools-image {
+    align-items: center;
 
     img {
         width: 100%;
@@ -892,8 +941,14 @@ section {
     margin: 76.81px 0px 76.81px 0px;
     flex-direction: column;
 
-    @media(max-width : 769px){
-        &.width{
+    @media(min-width : 936px) and (max-width : 1440px) {
+        &.margin{
+            margin-left: 60px;
+        }
+    }
+
+    @media(max-width : 769px) {
+        &.width {
             max-width: 550px;
             width: 100%;
         }
@@ -916,8 +971,8 @@ section {
         width: 100%;
         margin: 0px 110.05px 28px 0px;
 
-        @media(max-width : 769px){
-            &.width{
+        @media(max-width : 769px) {
+            &.width {
                 max-width: fit-content;
                 width: 100%;
                 margin-right: 0;
@@ -929,21 +984,21 @@ section {
         }
 
         @media(min-width : 376px) and (max-width : 426px) {
-            &.h1-on-MobileL{
+            &.h1-on-MobileL {
                 font-size: 42px;
                 line-height: 52px;
             }
         }
-        
+
         @media(min-width : 321px) and (max-width : 376px) {
-            &.h1-on-MobileM{
+            &.h1-on-MobileM {
                 font-size: 39px;
                 line-height: 49px;
             }
         }
-        
+
         @media(max-width : 320px) {
-            &.h1-on-MobileS{
+            &.h1-on-MobileS {
                 font-size: 35px;
                 line-height: 45px;
             }
@@ -959,7 +1014,7 @@ section {
         width: 100%;
         color: #050038a0;
 
-        @media(max-width : 769px){
+        @media(max-width : 769px) {
             max-width: fit-content;
             width: 100%;
         }
@@ -969,7 +1024,7 @@ section {
         }
 
         @media(max-width : 426px) {
-            &.normal-txt-on-Mobile{
+            &.normal-txt-on-Mobile {
                 font-size: 16px;
                 line-height: 22px;
             }
@@ -997,7 +1052,7 @@ section {
         line-height: 24px;
 
         @media(max-width : 426px) {
-            &.normal-txt-on-Mobile{
+            &.normal-txt-on-Mobile {
                 font-size: 16px;
                 line-height: 22px;
             }
@@ -1054,22 +1109,22 @@ section {
             margin-top: 62px;
 
             @media(min-width : 376px) and (max-width : 426px) {
-                &.h1-on-MobileL{
+                &.h1-on-MobileL {
                     font-size: 18px;
                     line-height: 20px;
                 }
             }
-            
+
             @media(min-width : 321px) and (max-width : 376px) {
-                &.h1-on-MobileM{
+                &.h1-on-MobileM {
                     font-size: 18px;
                     line-height: 19px;
                     margin-top: 45px;
                 }
             }
-            
+
             @media(max-width : 320px) {
-                &.h1-on-MobileS{
+                &.h1-on-MobileS {
                     font-size: 18px;
                     line-height: 18px;
                     margin-top: 25px;
@@ -1087,7 +1142,7 @@ section {
             margin: -10px 0px 20px 0px;
 
             @media(min-width : 376px) and (max-width : 426px) {
-                &.normal-txt-on-MobileL{
+                &.normal-txt-on-MobileL {
                     font-size: 14px;
                     line-height: 18px;
                     margin-top: -8px;
@@ -1095,7 +1150,7 @@ section {
             }
 
             @media(min-width : 321px) and (max-width : 376px) {
-                &.normal-txt-on-MobileM{
+                &.normal-txt-on-MobileM {
                     font-size: 12px;
                     line-height: 16px;
                     margin-top: -5px;
@@ -1103,8 +1158,8 @@ section {
                 }
             }
 
-            @media(max-width : 320px){
-                &.normal-txt-on-MobileS{
+            @media(max-width : 320px) {
+                &.normal-txt-on-MobileS {
                     font-size: 10px;
                     line-height: 14px;
                     margin-top: -3px;
@@ -1123,16 +1178,16 @@ section {
             white-space: nowrap;
             font-size: 14px;
 
-            @media(min-width : 321px) and (max-width : 426px){
-                &.bt-size{
+            @media(min-width : 321px) and (max-width : 426px) {
+                &.bt-size {
                     height: 30px;
                     width: 60%;
                     font-size: 10px;
                 }
             }
 
-            @media(max-width : 320px){
-                &.size{
+            @media(max-width : 320px) {
+                &.size {
                     height: 10px;
                     width: 60%;
                     font-size: 9px;
@@ -1162,13 +1217,13 @@ section {
         }
     }
 
-    @media(max-width : 426px) {
+    @media(max-width : 1025px) {
         &.widthonMobile-M {
             width: calc(100% - 32px);
         }
     }
 
-    @media(max-width : 426px) {
+    @media(max-width : 1025px) {
         .zero-margin {
             margin-left: 0;
             margin-right: 0;
@@ -1188,21 +1243,21 @@ section {
         font-family: Arial, Helvetica, sans-serif;
 
         @media(min-width : 376px) and (max-width : 426px) {
-            &.h1-on-MobileL{
+            &.h1-on-MobileL {
                 font-size: 42px;
                 line-height: 52px;
             }
         }
-        
+
         @media(min-width : 321px) and (max-width : 376px) {
-            &.h1-on-MobileM{
+            &.h1-on-MobileM {
                 font-size: 39px;
                 line-height: 49px;
             }
         }
-        
+
         @media(max-width : 320px) {
-            &.h1-on-MobileS{
+            &.h1-on-MobileS {
                 font-size: 35px;
                 line-height: 45px;
             }
@@ -1217,7 +1272,7 @@ section {
         max-width: 1060px;
         width: 100%;
 
-        @media(max-width : 426px) {
+        @media(max-width : 1025px) {
             &.zero-margin-padding {
                 margin: 0;
                 padding-top: 26px;
@@ -1226,13 +1281,7 @@ section {
         }
 
         .margin {
-            margin-left: 7px;
-        }
-
-        @media(max-width : 1120px) {
-            .marg {
-                margin-left: 7px;
-            }
+            margin-right: 7px;
         }
 
 
@@ -1243,7 +1292,7 @@ section {
             font-family: Arial, Helvetica, sans-serif;
             line-height: 20px;
             padding: 12px 28px 14px 17px;
-            margin-top: 6px;
+            margin-top: 7px;
         }
 
         .tab-bg-color {
@@ -1272,7 +1321,7 @@ section {
             }
         }
 
-        @media(max-width : 426px) {
+        @media(max-width : 1025px) {
             &.zero-margin-pad {
                 margin: 0;
                 padding-bottom: 30px;
@@ -1284,8 +1333,8 @@ section {
             max-width: 360px;
             width: 100%;
 
-            @media(max-width : 769px){
-                &#width{
+            @media(max-width : 769px) {
+                &#width {
                     max-width: fit-content;
                     width: 100%;
                 }
@@ -1299,7 +1348,7 @@ section {
                 margin: 31px 218px 0px 16px;
 
                 @media(max-width : 426px) {
-                    &.normal-txt-on-Mobile{
+                    &.normal-txt-on-Mobile {
                         font-size: 16px;
                         line-height: 22px;
                     }
@@ -1324,7 +1373,7 @@ section {
                 width: 100%;
 
                 @media(max-width : 426px) {
-                    &.normal-txt-on-Mobile{
+                    &.normal-txt-on-Mobile {
                         font-size: 16px;
                         line-height: 22px;
                     }
@@ -1357,7 +1406,7 @@ section {
                 }
 
                 @media(max-width : 426px) {
-                    &.normal-txt-on-Mobile{
+                    &.normal-txt-on-Mobile {
                         font-size: 16px;
                         line-height: 22px;
                     }
@@ -1403,13 +1452,13 @@ section {
         }
     }
 
-    @media(max-width : 426px) {
+    @media(max-width : 1025px) {
         &.widthonMobile-M {
             width: calc(100% - 32px);
         }
     }
 
-    @media(max-width : 426px) {
+    @media(max-width : 1025px) {
         .zero-margin {
             margin-left: 0;
             margin-right: 0;
@@ -1429,21 +1478,21 @@ section {
         font-family: Arial, Helvetica, sans-serif;
 
         @media(min-width : 376px) and (max-width : 426px) {
-            &.h1-on-MobileL{
+            &.h1-on-MobileL {
                 font-size: 42px;
                 line-height: 52px;
             }
         }
-        
+
         @media(min-width : 321px) and (max-width : 376px) {
-            &.h1-on-MobileM{
+            &.h1-on-MobileM {
                 font-size: 39px;
                 line-height: 49px;
             }
         }
-        
+
         @media(max-width : 320px) {
-            &.h1-on-MobileS{
+            &.h1-on-MobileS {
                 font-size: 35px;
                 line-height: 45px;
             }
@@ -1457,17 +1506,11 @@ section {
         max-width: 1060px;
         width: 100%;
 
-        @media(max-width : 426px) {
+        @media(max-width : 1025px) {
             &.zero-margin-padding {
                 margin: 0;
                 padding-top: 26px;
                 padding-bottom: 26px;
-            }
-        }
-
-        @media(max-width : 984px) {
-            .marg {
-                margin-left: 7.5px;
             }
         }
 
@@ -1479,11 +1522,11 @@ section {
             font-family: Arial, Helvetica, sans-serif;
             line-height: 20px;
             padding: 12px 28px 14px 17px;
-            margin-top: 6px;
+            margin-top: 8px;
         }
 
         .margin {
-            margin-left: 8px;
+            margin-right: 8px;
         }
 
         .tab-bg-color {
@@ -1512,7 +1555,7 @@ section {
             }
         }
 
-        @media(max-width : 426px) {
+        @media(max-width : 1025px) {
             &.zero-margin-pad {
                 margin: 0;
             }
@@ -1524,8 +1567,8 @@ section {
             max-width: 360px;
             width: 100%;
 
-            @media(max-width : 769px){
-                &.width{
+            @media(max-width : 769px) {
+                &.width {
                     max-width: fit-content;
                     width: 100%;
                 }
@@ -1534,8 +1577,8 @@ section {
 
             .left-border-content {
 
-                @media(max-width : 769px){
-                    .width{
+                @media(max-width : 769px) {
+                    .width {
                         max-width: fit-content;
                         width: 100%;
                     }
@@ -1574,15 +1617,15 @@ section {
                     width: 100%;
                     margin-left: 14px;
 
-                    @media(max-width : 769px){
-                        &.width{
+                    @media(max-width : 769px) {
+                        &.width {
                             max-width: fit-content;
                             width: 100%;
                         }
                     }
 
                     @media(max-width : 426px) {
-                        &.normal-txt-on-Mobile{
+                        &.normal-txt-on-Mobile {
                             font-size: 16px;
                             line-height: 22px;
                         }
@@ -1598,15 +1641,15 @@ section {
                     width: 100%;
                     margin-left: 14px;
 
-                    @media(max-width : 769px){
-                        &.width{
+                    @media(max-width : 769px) {
+                        &.width {
                             max-width: fit-content;
                             width: 100%;
                         }
                     }
 
                     @media(max-width : 426px) {
-                        &.normal-txt-on-Mobile{
+                        &.normal-txt-on-Mobile {
                             font-size: 16px;
                             line-height: 22px;
                         }
@@ -1622,15 +1665,15 @@ section {
                     width: 100%;
                     margin-left: 14px;
 
-                    @media(max-width : 769px){
-                        &.width{
+                    @media(max-width : 769px) {
+                        &.width {
                             max-width: fit-content;
                             width: 100%;
                         }
                     }
 
                     @media(max-width : 426px) {
-                        &.normal-txt-on-Mobile{
+                        &.normal-txt-on-Mobile {
                             font-size: 16px;
                             line-height: 22px;
                         }
@@ -1645,7 +1688,7 @@ section {
                 font-family: Arial, Helvetica, sans-serif;
 
                 @media(max-width : 426px) {
-                    &.normal-txt-on-Mobile{
+                    &.normal-txt-on-Mobile {
                         font-size: 16px;
                         line-height: 22px;
                     }
@@ -1667,7 +1710,7 @@ section {
                     font-family: Arial, Helvetica, sans-serif;
 
                     @media(max-width : 426px) {
-                        &.normal-txt-on-Mobile{
+                        &.normal-txt-on-Mobile {
                             font-size: 16px;
                             line-height: 22px;
                         }
@@ -1772,21 +1815,21 @@ section {
                     margin: 0;
 
                     @media(min-width : 376px) and (max-width : 426px) {
-                        &.h1-on-MobileL{
+                        &.h1-on-MobileL {
                             font-size: 42px;
                             line-height: 52px;
                         }
                     }
-                    
+
                     @media(min-width : 321px) and (max-width : 376px) {
-                        &.h1-on-MobileM{
+                        &.h1-on-MobileM {
                             font-size: 39px;
                             line-height: 49px;
                         }
                     }
-                    
+
                     @media(max-width : 320px) {
-                        &.h1-on-MobileS{
+                        &.h1-on-MobileS {
                             font-size: 35px;
                             line-height: 45px;
                         }
@@ -1804,7 +1847,7 @@ section {
                     border-bottom: 1px solid #050038;
 
                     @media(max-width : 426px) {
-                        &.normal-txt-on-Mobile{
+                        &.normal-txt-on-Mobile {
                             font-size: 16px;
                             line-height: 22px;
                         }
@@ -1868,7 +1911,7 @@ section {
                         text-align: center;
 
                         @media(max-width : 426px) {
-                            &.normal-txt-on-Mobile{
+                            &.normal-txt-on-Mobile {
                                 font-size: 16px;
                                 line-height: 22px;
                             }
@@ -1911,7 +1954,7 @@ section {
                         text-align: center;
 
                         @media(max-width : 426px) {
-                            &.normal-txt-on-Mobile{
+                            &.normal-txt-on-Mobile {
                                 font-size: 16px;
                                 line-height: 22px;
                             }
@@ -1953,7 +1996,7 @@ section {
                         text-align: center;
 
                         @media(max-width : 426px) {
-                            &.normal-txt-on-Mobile{
+                            &.normal-txt-on-Mobile {
                                 font-size: 16px;
                                 line-height: 22px;
                             }
@@ -1995,7 +2038,7 @@ section {
                         text-align: center;
 
                         @media(max-width : 426px) {
-                            &.normal-txt-on-Mobile{
+                            &.normal-txt-on-Mobile {
                                 font-size: 16px;
                                 line-height: 22px;
                             }
@@ -2036,7 +2079,7 @@ section {
                         text-align: center;
 
                         @media(max-width : 426px) {
-                            &.normal-txt-on-Mobile{
+                            &.normal-txt-on-Mobile {
                                 font-size: 16px;
                                 line-height: 22px;
                             }
@@ -2077,7 +2120,7 @@ section {
                         text-align: center;
 
                         @media(max-width : 426px) {
-                            &.normal-txt-on-Mobile{
+                            &.normal-txt-on-Mobile {
                                 font-size: 16px;
                                 line-height: 22px;
                             }
@@ -2098,7 +2141,6 @@ section {
     width: calc(100% - 32px);
     margin: 0 auto;
     margin-top: 60px;
-    margin-bottom: 120px;
     flex-direction: column;
     align-items: center;
 
@@ -2115,21 +2157,21 @@ section {
         text-align: center;
 
         @media(min-width : 376px) and (max-width : 426px) {
-            &.h1-on-MobileL{
+            &.h1-on-MobileL {
                 font-size: 42px;
                 line-height: 52px;
             }
         }
-        
+
         @media(min-width : 321px) and (max-width : 376px) {
-            &.h1-on-MobileM{
+            &.h1-on-MobileM {
                 font-size: 39px;
                 line-height: 49px;
             }
         }
-        
+
         @media(max-width : 320px) {
-            &.h1-on-MobileS{
+            &.h1-on-MobileS {
                 font-size: 35px;
                 line-height: 45px;
             }
@@ -2182,6 +2224,7 @@ section {
             margin-top: 36px;
 
             img {
+
                 border: transparent 1px solid;
                 box-shadow: 7px 3px 20px 5px #bcb5b521;
             }
@@ -2197,7 +2240,7 @@ section {
             margin-bottom: 48.92px;
 
             @media(max-width : 426px) {
-                &.normal-txt-on-Mobile{
+                &.normal-txt-on-Mobile {
                     font-size: 16px;
                     line-height: 22px;
                 }
@@ -2210,6 +2253,11 @@ section {
             margin-bottom: 36px;
             justify-content: center;
             align-items: center;
+
+            img{
+                display: flex;
+                align-items: center;
+            }
 
             .first-reviewer-details {
                 max-width: 207.7px;
@@ -2244,7 +2292,7 @@ section {
             margin-bottom: 135px;
 
             @media(max-width : 426px) {
-                &.normal-txt-on-Mobile{
+                &.normal-txt-on-Mobile {
                     font-size: 16px;
                     line-height: 22px;
                 }
@@ -2253,6 +2301,13 @@ section {
 
         .second-reviewer {
             margin-bottom: 36px;
+            justify-content: center;
+            align-items: center;
+
+            img{
+                display: flex;
+                align-items: center;
+            }
 
             .second-reviewer-details {
                 max-width: 207.7px;
@@ -2290,7 +2345,7 @@ section {
             margin-bottom: 112px;
 
             @media(max-width : 426px) {
-                &.normal-txt-on-Mobile{
+                &.normal-txt-on-Mobile {
                     font-size: 16px;
                     line-height: 22px;
                 }
@@ -2299,6 +2354,13 @@ section {
 
         .third-reviewer {
             margin-bottom: 36px;
+            justify-content: center;
+            align-items: center;
+
+            img{
+                display: flex;
+                align-items: center;
+            }
 
             .third-reviewer-details {
                 max-width: 207.7px;
@@ -2321,10 +2383,19 @@ section {
     margin: 0 auto;
     background-color: #050038;
     padding: 120px 0px;
+    margin-top: 120px;
     margin-bottom: 120px;
     border-radius: 16px;
     align-items: center;
     justify-content: center;
+
+    @media(max-width : 426px) {
+        &.pad{
+            padding: 50px 0;
+            margin-top: 90px;
+            margin-bottom: 90px;
+        }
+    }
 
     .joining-link-content {
         max-width: 1080px;
@@ -2344,21 +2415,21 @@ section {
             text-align: center;
 
             @media(min-width : 376px) and (max-width : 426px) {
-                &.h1-on-MobileL{
+                &.h1-on-MobileL {
                     font-size: 42px;
                     line-height: 52px;
                 }
             }
-            
+
             @media(min-width : 321px) and (max-width : 376px) {
-                &.h1-on-MobileM{
+                &.h1-on-MobileM {
                     font-size: 39px;
                     line-height: 49px;
                 }
             }
-            
+
             @media(max-width : 320px) {
-                &.h1-on-MobileS{
+                &.h1-on-MobileS {
                     font-size: 35px;
                     line-height: 45px;
                 }
@@ -2381,7 +2452,7 @@ section {
                 margin-bottom: 12px;
 
                 @media(max-width : 426px) {
-                    &.normal-txt-on-Mobile{
+                    &.normal-txt-on-Mobile {
                         font-size: 16px;
                         line-height: 22px;
                     }
@@ -2397,7 +2468,7 @@ section {
                 }
 
                 @media(max-width : 426px) {
-                    &.normal-txt-on-Mobile{
+                    &.normal-txt-on-Mobile {
                         font-size: 16px;
                         line-height: 22px;
                     }
