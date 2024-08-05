@@ -119,7 +119,7 @@ section {
     padding: 0 16px;
   }
 }
-@media (max-width: 426px) {
+@media (max-width: 769px) {
   .header.position {
     position: sticky;
     top: 0;
