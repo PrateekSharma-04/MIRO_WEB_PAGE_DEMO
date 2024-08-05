@@ -78,19 +78,33 @@ section {
 
 // =============Header css =================
 
+#header{
+    height: 90px;
+}
+
 .header {
     // padding: 24px 24px 34px 30px;
     font-family: Arial, Helvetica, sans-serif;
     border-bottom: 2px solid #F0F0F0;
     display: flex;
     justify-content: space-between;
-    height: 90px;
+    width: 100%;
     padding: 0 24px 0 30px;
     align-items: center;
+    transition: 0.2s;
 
-    @media(max-width : 1024px){
-        &.pad{
+    @media(max-width : 1024px) {
+        &.pad {
             padding: 0 16px;
+        }
+    }
+
+    @media(max-width : 426px){
+        &.position{
+            position: sticky;
+            top: 0;
+            background-color: #ffffff;
+            z-index: 10;
         }
     }
 
@@ -108,11 +122,11 @@ section {
             text-decoration: none;
         }
 
-        &:hover .dropdown_menu{
+        &:hover .dropdown_menu {
             display: block;
         }
 
-        &:hover .drop-down-arrow{
+        &:hover .drop-down-arrow {
             transform: rotate(180deg);
         }
     }
@@ -141,7 +155,7 @@ section {
             padding: 12px 16px;
             float: none;
 
-            &:hover{
+            &:hover {
                 background-color: #ddd;
             }
         }
@@ -172,7 +186,7 @@ section {
         right: -100%;
         height: 100%;
         width: 250px;
-        z-index: 999;
+        z-index: 9999;
         background-color: rgba(255, 255, 255, 0.7);
         backdrop-filter: blur(10px);
         box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
@@ -386,8 +400,8 @@ section {
         border: 1px black;
         width: 100%;
 
-        @media(max-width : 769px){
-            &.wid{
+        @media(max-width : 769px) {
+            &.wid {
                 width: 75%;
             }
         }
@@ -563,6 +577,7 @@ section {
     max-height: 168px;
     height: 100%;
     overflow: visible;
+    z-index: 0;
 
     h1 {
         display: flex;
@@ -629,7 +644,7 @@ section {
     flex-wrap: wrap;
     margin-top: 40px;
 
-    @media(max-width:1080px) {
+    @media(max-width:1112px) {
         &.card {
             justify-content: center;
         }
@@ -820,9 +835,24 @@ section {
         align-items: center;
         justify-content: center;
 
+
+        @media(max-width : 769px) {
+            &.wdth {
+                max-width: none;
+                width: 100%;
+            }
+        }
+
         div {
             max-width: 550px;
             width: 100%;
+
+            @media(max-width : 769px) {
+                &.wdth {
+                    max-width: none;
+                    width: 100%;
+                }
+            }
         }
 
         h1 {
@@ -950,14 +980,14 @@ section {
     flex-direction: column;
 
     @media(min-width : 936px) and (max-width : 1440px) {
-        &.margin{
+        &.margin {
             margin-left: 60px;
         }
     }
 
     @media(max-width : 769px) {
         &.width {
-            max-width: 550px;
+            max-width: none;
             width: 100%;
         }
     }
@@ -1153,7 +1183,7 @@ section {
                 &.normal-txt-on-MobileL {
                     font-size: 14px;
                     line-height: 18px;
-                    margin-top: -8px;
+                    margin-top: -5px;
                 }
             }
 
@@ -2216,7 +2246,7 @@ section {
         flex-wrap: wrap;
     }
 
-    @media(max-width : 1096px) {
+    @media(max-width : 1112px) {
         .reviews-content {
             justify-content: center;
         }
@@ -2227,6 +2257,12 @@ section {
         width: 100%;
         flex-direction: column;
         align-items: center;
+
+        @media(max-width : 426px) {
+            &.shadow {
+                box-shadow: 0px 0px 20px 4px rgba(188, 181, 181, 0.1294117647);
+            }
+        }
 
         .first-review-title {
             margin-top: 36px;
@@ -2262,7 +2298,7 @@ section {
             justify-content: center;
             align-items: center;
 
-            img{
+            img {
                 display: flex;
                 align-items: center;
             }
@@ -2284,6 +2320,12 @@ section {
         /* margin: 0px 20px; */
         flex-direction: column;
         align-items: center;
+
+        @media(max-width : 426px) {
+            &.shadow {
+                box-shadow: 0px 0px 20px 3px rgba(188, 181, 181, 0.1294117647);
+            }
+        }
 
         .second-review-title {
             margin-top: 36px;
@@ -2312,7 +2354,7 @@ section {
             justify-content: center;
             align-items: center;
 
-            img{
+            img {
                 display: flex;
                 align-items: center;
             }
@@ -2333,6 +2375,12 @@ section {
         width: 100%;
         flex-direction: column;
         align-items: center;
+
+        @media(max-width : 426px) {
+            &.shadow {
+                box-shadow: 0px 0px 20px 2px rgba(188, 181, 181, 0.1294117647);
+            }
+        }
 
         .third-review-title {
             margin-top: 36px;
@@ -2365,7 +2413,7 @@ section {
             justify-content: center;
             align-items: center;
 
-            img{
+            img {
                 display: flex;
                 align-items: center;
             }
@@ -2398,7 +2446,7 @@ section {
     justify-content: center;
 
     @media(max-width : 426px) {
-        &.pad{
+        &.pad {
             padding: 50px 0;
             margin-top: 90px;
             margin-bottom: 90px;
@@ -2870,9 +2918,17 @@ section {
                         font-family: Arial, Helvetica, sans-serif;
                         justify-content: space-between;
                         flex-wrap: wrap;
+                        gap: 20px 0;
+
+                        @media(max-width : 426px) {
+                            &.direction {
+                                flex-direction: column;
+                                margin-top: 20px;
+                            }
+                        }
 
                         .copyright {
-                            font-size: 15px;
+                            font-size: 16px;
                             line-height: 24px;
 
                             &:hover {
